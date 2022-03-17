@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-02T01:27:19.956Z</updated>
+  <updated>2022-03-17T14:13:06.830Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>超星学习通小助手安装教程</title>
+    <link href="http://example.com/2022/03/02/crx/"/>
+    <id>http://example.com/2022/03/02/crx/</id>
+    <published>2022-03-02T02:00:00.000Z</published>
+    <updated>2022-03-17T14:13:06.830Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>很多小伙伴由于受到学习通（堵）的摧残与折磨，纷纷去寻找插件和脚本来一键完成任务<br>但是很多小伙伴由于是初次接触浏览器扩展（也叫插件），所以在安装插件方面还有不少困惑，首先你需要知道插件的扩展名为 <code>.crx</code> 或 <code>.xpi</code><br>而<code>Tampermonkey</code>是一款免费的浏览器扩展和最为流行的用户脚本管理器，它适用于 Chrome, Microsoft Edge, Safari, Opera Next, 和 Firefox等众多浏览器。<br>今天给大家带来利用 Microsoft Edge 浏览器（windows10以上电脑自带）安装 Tampermonkey 和学习通助手脚本。<br>最近超星一直更新，不保证以后100%有效，本页持续更新最新脚本。</p><hr><h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><h2 id="1、安装-Tampermonkey"><a href="#1、安装-Tampermonkey" class="headerlink" title="1、安装 Tampermonkey"></a>1、安装 Tampermonkey</h2><p>用Microsoft Edge 浏览器打开 </p><blockquote><p><a href="https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd">点击下载 Tampermonkey</a><br>因为是国外的地址所以打开比较缓慢请耐心等待，加载完成之后点击获取该插件，它会自动将 <a href="https://www.tampermonkey.net/">Tampermonkey</a> 安装好,这时你就会发现浏览器右上去出现新安装好的插件。</p></blockquote><h2 id="2、安装-学习通助手"><a href="#2、安装-学习通助手" class="headerlink" title="2、安装 学习通助手"></a>2、安装 学习通助手</h2><p>一切安装好之后就可以安装学习通助手脚本了，这里有很多脚本都是以前的，自2021.10学习通更新之后，增加了屏蔽高倍数播放代码，很多人都暂停更新脚本了，这里我找到一个依旧可用的插件</p><blockquote><p><a href="https://scriptcat.org/scripts/code/336/%E8%B6%85%E6%98%9F%E7%BD%91%E8%AF%BE%E5%B0%8F%E5%8A%A9%E6%89%8B.user.js">点我下载 学习通助手</a></p></blockquote><p>点击下载进去安装之后还需要自己去配置，然后我们打开学习通，随便一个科目的章节，自己配置之后即可开启暴走（挂科)模式,倍数播放建议不要太高，最大为16倍数。</p><p>最后特别提醒：秒过有风险，倍数需谨慎。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;很多小伙伴由于受到学习通（堵）的摧残与折磨，纷纷去寻找插件和脚本来一键完成任务&lt;br&gt;但是很多小伙伴由于是初次接触浏览器扩展（也叫插件），所</summary>
+      
+    
+    
+    
+    <category term="学习教程" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="脚本" scheme="http://example.com/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+    <category term="学习通" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0%E9%80%9A/"/>
+    
+  </entry>
   
   <entry>
     <title>从零开始学 Web 之 CSS（三）	链接伪类、背景、行高、盒子模型、浮动</title>
