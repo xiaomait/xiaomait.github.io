@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-20T04:57:24.886Z</updated>
+  <updated>2022-01-14T10:34:02.533Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2022/06/17/hello-world/"/>
+    <id>http://example.com/2022/06/17/hello-world/</id>
+    <published>2022-06-17T02:43:47.596Z</published>
+    <updated>2022-01-14T10:34:02.533Z</updated>
+    
+    <content type="html"><![CDATA[<p>欢迎来到 <a href="https://hexo.io/">Hexo</a>! 本文将记录Hexo+Markdown的学习手册！</p><hr><blockquote><h1 id="Hexo手册"><a href="#Hexo手册" class="headerlink" title="Hexo手册"></a>Hexo手册</h1></blockquote><h2 id="创建一个新的文章"><a href="#创建一个新的文章" class="headerlink" title="创建一个新的文章"></a>创建一个新的文章</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;XXX&quot;</span></span><br></pre></td></tr></table></figure><h2 id="创建一个新的页面"><a href="#创建一个新的页面" class="headerlink" title="创建一个新的页面"></a>创建一个新的页面</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page XXX</span><br></pre></td></tr></table></figure><h2 id="本地调试服务"><a href="#本地调试服务" class="headerlink" title="本地调试服务"></a>本地调试服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><h2 id="清理页面缓冲"><a href="#清理页面缓冲" class="headerlink" title="清理页面缓冲"></a>清理页面缓冲</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><h2 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><blockquote><h1 id="Markdown手册"><a href="#Markdown手册" class="headerlink" title="Markdown手册"></a>Markdown手册</h1></blockquote><h2 id="标题（Heading）"><a href="#标题（Heading）" class="headerlink" title="标题（Heading）"></a>标题（Heading）</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br></pre></td></tr></table></figure><h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h2 id="加重语气（Emphasis）"><a href="#加重语气（Emphasis）" class="headerlink" title="加重语气（Emphasis）"></a>加重语气（Emphasis）</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Emphasis, aka italics, with <span class="emphasis">*asterisks*</span> or <span class="emphasis">_underscores_</span>.</span><br><span class="line"></span><br><span class="line">Strong emphasis, aka bold, with <span class="strong">**asterisks**</span> or <span class="strong">__underscores__</span>.</span><br><span class="line"></span><br><span class="line">Strikethrough uses two tildes. ~~Scratch this.~~</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>. （斜体）</p><p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>. （粗体）</p><p>Strikethrough uses two tildes. <del>Scratch this.</del> （删除线）</p><h2 id="列表（Lists）"><a href="#列表（Lists）" class="headerlink" title="列表（Lists）"></a>列表（Lists）</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表（First item）</span><br><span class="line"><span class="bullet">2.</span> 有序列表（Second item）</span><br><span class="line"></span><br><span class="line"><span class="bullet">*</span> 无序列表（First item）</span><br><span class="line"><span class="bullet">-</span> 无序列表（Second item）</span><br><span class="line"><span class="bullet">+</span> 无序列表（Third item）</span><br></pre></td></tr></table></figure><p>❌ 切记无序列表不能混合使用，只能使用一种</p><ol><li>有序列表（First item）</li><li>有序列表（Second item）</li></ol><ul><li>无序列表（First item）</li></ul><h2 id="链接（links）"><a href="#链接（links）" class="headerlink" title="链接（links）"></a>链接（links）</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">[<span class="string">这是一个内联风格的链接</span>](<span class="link">https://www.google.com</span>)</span><br><span class="line">[<span class="string">这是一个带标题内联风格的链接</span>](<span class="link">https://www.google.com &quot;Google&#x27;s Homepage&quot;</span>)</span><br><span class="line">鼠标悬停查看标题</span><br></pre></td></tr></table></figure><p><a href="https://www.google.com/">这是一个内联风格的链接</a><br><a href="https://www.google.com/" title="Google&#39;s Homepage">这是一个带标题内联风格的链接</a><br>鼠标悬停查看标题</p><h2 id="图像（Images）"><a href="#图像（Images）" class="headerlink" title="图像（Images）"></a>图像（Images）</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">内联样式:</span><br><span class="line"></span><br><span class="line">![<span class="string">alt text</span>](<span class="link">https://hexo.io/icon/favicon-196x196.png &quot;Logo Title Text 1&quot;</span>)</span><br><span class="line"></span><br><span class="line">外链样式:</span><br><span class="line">![<span class="string">alt text</span>][<span class="symbol">logo</span>]</span><br><span class="line"></span><br><span class="line">[<span class="symbol">logo</span>]: <span class="link">https://hexo.io/icon/favicon-196x196.png &quot;Logo Title Text 2&quot;</span></span><br></pre></td></tr></table></figure><p>内联样式:</p><p><img src="https://hexo.io/icon/favicon-196x196.png" alt="alt text" title="Logo Title Text 1"></p><p>外链样式:<br><img src="https://hexo.io/icon/favicon-196x196.png" alt="alt text" title="Logo Title Text 2"></p><h2 id="区块引用（Blockquotes）"><a href="#区块引用（Blockquotes）" class="headerlink" title="区块引用（Blockquotes）"></a>区块引用（Blockquotes）</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 这是一个区块引用演示</span></span><br><span class="line"><span class="quote">&gt; #### 当然你可以与前面学过的混合使用</span></span><br><span class="line"><span class="quote">&gt;</span></span><br><span class="line"><span class="quote">&gt; - 无序列表</span></span><br><span class="line"><span class="quote">&gt; 1. 有序列表</span></span><br><span class="line"><span class="quote">&gt;</span></span><br><span class="line"><span class="quote">&gt;  <span class="emphasis">*这是一个斜体*</span> 当然也可以 <span class="strong">**这是一个粗体**</span></span></span><br></pre></td></tr></table></figure><blockquote><p>这是一个区块引用演示</p><h4 id="当然你可以与前面学过的混合使用"><a href="#当然你可以与前面学过的混合使用" class="headerlink" title="当然你可以与前面学过的混合使用"></a>当然你可以与前面学过的混合使用</h4><ul><li>无序列表</li></ul><ol><li>有序列表</li></ol><p> <em>这是一个斜体</em> 当然也可以 <strong>这是一个粗体</strong></p></blockquote><h2 id="（水平标尺）Horizontal-Rule"><a href="#（水平标尺）Horizontal-Rule" class="headerlink" title="（水平标尺）Horizontal Rule"></a>（水平标尺）Horizontal Rule</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"></span><br><span class="line">这是三种样式且功能相同</span><br><span class="line"></span><br><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="emphasis"><span class="strong"></span></span></span><br><span class="line"><span class="emphasis"><span class="strong">可以任选其一进行使用</span></span></span><br><span class="line"><span class="emphasis"><span class="strong"><span class="strong">____</span><span class="strong">____</span><span class="strong">____</span><span class="strong">____</span>_</span></span></span><br><span class="line"><span class="emphasis"><span class="strong"></span></span></span><br></pre></td></tr></table></figure><hr><p>这是三种样式且功能相同</p><hr><p>可以任选其一进行使用</p><hr><h2 id="（表情样式）Expression"><a href="#（表情样式）Expression" class="headerlink" title="（表情样式）Expression"></a>（表情样式）Expression</h2><p>😊  😃  ☺️<br>💙  💜  ❤️<br>这么炫酷的表情怎么写入文章呢?<br>那当然是<kbd>ctrl</kbd>+<kbd>c</kbd>+<kbd>v</kbd><br>没错它可以直接写入markdown当中，详见作者的<a href="https://gist.github.com/rxaviers/7360908">GitHub</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;欢迎来到 &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! 本文将记录Hexo+Markdown的学习手册！&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h1 id=&quot;Hexo手册&quot;&gt;&lt;a href=&quot;#Hexo手册&quot; class=&quot;headerl</summary>
+      
+    
+    
+    
+    <category term="学习教程" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>（新）超星学习通小助手安装教程</title>
+    <link href="http://example.com/2022/06/17/crx/"/>
+    <id>http://example.com/2022/06/17/crx/</id>
+    <published>2022-06-17T02:00:00.000Z</published>
+    <updated>2022-06-17T02:36:41.621Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>很多小伙伴由于受到学习通（堵）的摧残与折磨，纷纷去寻找插件和脚本来一键完成任务<br>但是很多小伙伴由于是初次接触浏览器扩展（也叫插件），所以在安装插件方面还有不少困惑，首先你需要知道插件的扩展名为 <code>.crx</code> 或 <code>.xpi</code><br>而<code>Tampermonkey</code>是一款免费的浏览器扩展和最为流行的用户脚本管理器，它适用于 Chrome, Microsoft Edge, Safari, Opera Next, 和 Firefox等众多浏览器。<br>今天给大家带来利用 Microsoft Edge 浏览器（windows10以上电脑自带）安装 Tampermonkey 和学习通助手脚本。<br>注意：最近超星一直更新，不保证以后100%有效，本页持续更新最新脚本。</p><hr><h1 id="（新版）教程"><a href="#（新版）教程" class="headerlink" title="（新版）教程"></a>（新版）教程</h1><h2 id="New-or-Old-区别介绍"><a href="#New-or-Old-区别介绍" class="headerlink" title="New or Old 区别介绍"></a>New or Old 区别介绍</h2><ul><li>新版教程采用脚本猫（支持后台挂机需要扩展后台脚本）</li><li>新版教程支持账户多端同步，支持云同步</li><li>新版教程扩展性更强大，支持导出JSON文件</li><li>新版教程支持静默自动更新，支持弹窗</li><li>新版教程开发调试，支持自动连接VScode服务<h2 id="1、安装脚本猫"><a href="#1、安装脚本猫" class="headerlink" title="1、安装脚本猫"></a>1、安装脚本猫</h2></li></ul><blockquote><p><a href="https://scriptcat.org/scripts/code/336/%E8%B6%85%E6%98%9F%E7%BD%91%E8%AF%BE%E5%B0%8F%E5%8A%A9%E6%89%8B.user.js">点我下载 学习通助手</a></p></blockquote><p>这里我们还是采用 Microsoft Edge 浏览器，其他浏览器安装扩展方法一致。</p><blockquote><p><a href="https://microsoftedge.microsoft.com/addons/detail/scriptcat/liilgpjgabokdklappibcjfablkpcekh">Microsoft Edge</a><br><a href="https://chrome.google.com/webstore/detail/scriptcat/ndcooeababalnlpkfedmmbbbgkljhpjf">Google Chrome</a><br><a href="https://addons.mozilla.org/zh-CN/firefox/addon/scriptcat/">Firefox</a></p></blockquote><h2 id="2、安装-学习通助手"><a href="#2、安装-学习通助手" class="headerlink" title="2、安装 学习通助手"></a>2、安装 学习通助手</h2><blockquote><p><a href="https://scriptcat.org/scripts/code/336/%E8%B6%85%E6%98%9F%E7%BD%91%E8%AF%BE%E5%B0%8F%E5%8A%A9%E6%89%8B.user.js">点我下载 学习通助手</a></p></blockquote><p>安装操作和旧版一模一样，这里就不放图片教程了。</p><p>超星小助手新版本，目前支持自动播放章节内的视频任务、文档任务、章节测验(beta)<br>可配合超星挂机小助手实现1:1时长后台刷视频。</p><blockquote><p><a href="https://scriptcat.org/scripts/code/379/%E8%B6%85%E6%98%9F%E6%8C%82%E6%9C%BA%E5%B0%8F%E5%8A%A9%E6%89%8B(%E4%BB%85%E6%94%AF%E6%8C%81%E8%84%9A%E6%9C%AC%E7%8C%AB%EF%BC%8C%E8%AF%B7%E5%8B%BF%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4).user.js">点我下载 挂机小助手</a></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/xiaomait/cdn@main//blog/img/cx/5.png"></p><p>其他平台接的代刷网课基本就是靠这个实现的，以下是刷网课之后的记录。</p><h2 id=""><a href="#" class="headerlink" title=""></a><img src="https://cdn.jsdelivr.net/gh/xiaomait/cdn@main//blog/img/cx/6.png"></h2><h1 id="（旧版）教程"><a href="#（旧版）教程" class="headerlink" title="（旧版）教程"></a>（旧版）教程</h1><h2 id="1、安装-Tampermonkey"><a href="#1、安装-Tampermonkey" class="headerlink" title="1、安装 Tampermonkey"></a>1、安装 Tampermonkey</h2><p>打开 Microsoft Edge 浏览器（windows10以上电脑自带）</p><img src="https://cdn.jsdelivr.net/gh/xiaomait/cdn@main//blog/img/cx/edge.png" width="100px" height="100px"><p>点击下载 Tampermonkey，它会自动将 <a href="https://www.tampermonkey.net/">Tampermonkey</a> 安装好,这时你就会发现浏览器右上去出现新安装好的插件。</p><blockquote><p><a href="https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd">点击下载 Tampermonkey</a></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/xiaomait/cdn@main//blog/img/cx/1.png"></p><p>因为是国外的地址所以打开比较缓慢请耐心等待，加载完成之后会自动弹出以下界面则表示安装成功（特殊情况除外）。</p><p><img src="https://cdn.jsdelivr.net/gh/xiaomait/cdn@main//blog/img/cx/2.png"></p><h2 id="2、安装-学习通助手-1"><a href="#2、安装-学习通助手-1" class="headerlink" title="2、安装 学习通助手"></a>2、安装 学习通助手</h2><p>一切安装好之后就可以安装学习通助手脚本了，这里有很多脚本都是以前的，自2021.10学习通更新之后，增加了屏蔽高倍数播放代码，很多人都暂停更新脚本了，这里我找到一个依旧可用的插件</p><blockquote><p><a href="https://scriptcat.org/scripts/code/336/%E8%B6%85%E6%98%9F%E7%BD%91%E8%AF%BE%E5%B0%8F%E5%8A%A9%E6%89%8B.user.js">点我下载 学习通助手</a></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/xiaomait/cdn@main//blog/img/cx/3.png"></p><p>点击下载进去安装之后，我们就可以前往学习通，随便打开一个科目的章节，自己配置之后即可开启暴走（挂科) 模式,倍数播放建议不要太高，最大为16倍数。</p><p><img src="https://cdn.jsdelivr.net/gh/xiaomait/cdn@main//blog/img/cx/4.png"></p><p>最后特别提醒：秒过有风险，倍数需谨慎。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;很多小伙伴由于受到学习通（堵）的摧残与折磨，纷纷去寻找插件和脚本来一键完成任务&lt;br&gt;但是很多小伙伴由于是初次接触浏览器扩展（也叫插件），所</summary>
+      
+    
+    
+    
+    <category term="学习教程" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="脚本" scheme="http://example.com/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+    <category term="学习通" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0%E9%80%9A/"/>
+    
+  </entry>
   
   <entry>
     <title>60种编程语言学习书籍</title>
@@ -64,9 +121,9 @@
     
     <category term="Web" scheme="http://example.com/tags/Web/"/>
     
-    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
@@ -92,9 +149,9 @@
     
     <category term="Web" scheme="http://example.com/tags/Web/"/>
     
-    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
@@ -120,9 +177,9 @@
     
     <category term="Web" scheme="http://example.com/tags/Web/"/>
     
-    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
@@ -148,37 +205,9 @@
     
     <category term="Web" scheme="http://example.com/tags/Web/"/>
     
-    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
     
-  </entry>
-  
-  <entry>
-    <title>超星学习通小助手安装教程</title>
-    <link href="http://example.com/2022/03/02/crx/"/>
-    <id>http://example.com/2022/03/02/crx/</id>
-    <published>2022-03-02T02:00:00.000Z</published>
-    <updated>2022-03-20T05:20:28.642Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>很多小伙伴由于受到学习通（堵）的摧残与折磨，纷纷去寻找插件和脚本来一键完成任务<br>但是很多小伙伴由于是初次接触浏览器扩展（也叫插件），所以在安装插件方面还有不少困惑，首先你需要知道插件的扩展名为 <code>.crx</code> 或 <code>.xpi</code><br>而<code>Tampermonkey</code>是一款免费的浏览器扩展和最为流行的用户脚本管理器，它适用于 Chrome, Microsoft Edge, Safari, Opera Next, 和 Firefox等众多浏览器。<br>今天给大家带来利用 Microsoft Edge 浏览器（windows10以上电脑自带）安装 Tampermonkey 和学习通助手脚本。<br>注意：最近超星一直更新，不保证以后100%有效，本页持续更新最新脚本。</p><hr><h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><h2 id="1、安装-Tampermonkey"><a href="#1、安装-Tampermonkey" class="headerlink" title="1、安装 Tampermonkey"></a>1、安装 Tampermonkey</h2><p>打开 Microsoft Edge 浏览器（windows10以上电脑自带）</p><img src="https://cdn.jsdelivr.net/gh/xiaomait/cdn@main//blog/img/cx/edge.png" width="100px" height="100px"><p>点击下载 Tampermonkey，它会自动将 <a href="https://www.tampermonkey.net/">Tampermonkey</a> 安装好,这时你就会发现浏览器右上去出现新安装好的插件。</p><blockquote><p><a href="https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd">点击下载 Tampermonkey</a></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/xiaomait/cdn@main//blog/img/cx/1.png"></p><p>因为是国外的地址所以打开比较缓慢请耐心等待，加载完成之后会自动弹出以下界面则表示安装成功（特殊情况除外）。</p><p><img src="https://cdn.jsdelivr.net/gh/xiaomait/cdn@main//blog/img/cx/2.png"></p><h2 id="2、安装-学习通助手"><a href="#2、安装-学习通助手" class="headerlink" title="2、安装 学习通助手"></a>2、安装 学习通助手</h2><p>一切安装好之后就可以安装学习通助手脚本了，这里有很多脚本都是以前的，自2021.10学习通更新之后，增加了屏蔽高倍数播放代码，很多人都暂停更新脚本了，这里我找到一个依旧可用的插件</p><blockquote><p><a href="https://scriptcat.org/scripts/code/336/%E8%B6%85%E6%98%9F%E7%BD%91%E8%AF%BE%E5%B0%8F%E5%8A%A9%E6%89%8B.user.js">点我下载 学习通助手</a></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/xiaomait/cdn@main//blog/img/cx/3.png"></p><p>点击下载进去安装之后，我们就可以前往学习通，随便打开一个科目的章节，自己配置之后即可开启暴走（挂科) 模式,倍数播放建议不要太高，最大为16倍数。</p><p><img src="https://cdn.jsdelivr.net/gh/xiaomait/cdn@main//blog/img/cx/4.png"></p><p>最后特别提醒：秒过有风险，倍数需谨慎。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;很多小伙伴由于受到学习通（堵）的摧残与折磨，纷纷去寻找插件和脚本来一键完成任务&lt;br&gt;但是很多小伙伴由于是初次接触浏览器扩展（也叫插件），所</summary>
-      
-    
-    
-    
-    <category term="学习教程" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B/"/>
-    
-    
     <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="脚本" scheme="http://example.com/tags/%E8%84%9A%E6%9C%AC/"/>
-    
-    <category term="学习通" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0%E9%80%9A/"/>
     
   </entry>
   
@@ -318,9 +347,9 @@
     
     <category term="Web" scheme="http://example.com/tags/Web/"/>
     
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
     <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
     
   </entry>
   
@@ -346,9 +375,9 @@
     
     <category term="Web" scheme="http://example.com/tags/Web/"/>
     
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
     <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
     
   </entry>
   
@@ -374,9 +403,9 @@
     
     <category term="Web" scheme="http://example.com/tags/Web/"/>
     
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
     <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
     
   </entry>
   
@@ -402,9 +431,9 @@
     
     <category term="Web" scheme="http://example.com/tags/Web/"/>
     
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
     <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
     
   </entry>
   
@@ -432,38 +461,9 @@
     
     <category term="Web" scheme="http://example.com/tags/Web/"/>
     
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
     <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
-    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2022/01/07/hello-world/"/>
-    <id>http://example.com/2022/01/07/hello-world/</id>
-    <published>2022-01-07T02:35:39.650Z</published>
-    <updated>2022-01-14T10:34:02.533Z</updated>
-    
-    <content type="html"><![CDATA[<p>欢迎来到 <a href="https://hexo.io/">Hexo</a>! 本文将记录Hexo+Markdown的学习手册！</p><hr><blockquote><h1 id="Hexo手册"><a href="#Hexo手册" class="headerlink" title="Hexo手册"></a>Hexo手册</h1></blockquote><h2 id="创建一个新的文章"><a href="#创建一个新的文章" class="headerlink" title="创建一个新的文章"></a>创建一个新的文章</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;XXX&quot;</span></span><br></pre></td></tr></table></figure><h2 id="创建一个新的页面"><a href="#创建一个新的页面" class="headerlink" title="创建一个新的页面"></a>创建一个新的页面</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page XXX</span><br></pre></td></tr></table></figure><h2 id="本地调试服务"><a href="#本地调试服务" class="headerlink" title="本地调试服务"></a>本地调试服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><h2 id="清理页面缓冲"><a href="#清理页面缓冲" class="headerlink" title="清理页面缓冲"></a>清理页面缓冲</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><h2 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><blockquote><h1 id="Markdown手册"><a href="#Markdown手册" class="headerlink" title="Markdown手册"></a>Markdown手册</h1></blockquote><h2 id="标题（Heading）"><a href="#标题（Heading）" class="headerlink" title="标题（Heading）"></a>标题（Heading）</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br></pre></td></tr></table></figure><h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h2 id="加重语气（Emphasis）"><a href="#加重语气（Emphasis）" class="headerlink" title="加重语气（Emphasis）"></a>加重语气（Emphasis）</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Emphasis, aka italics, with <span class="emphasis">*asterisks*</span> or <span class="emphasis">_underscores_</span>.</span><br><span class="line"></span><br><span class="line">Strong emphasis, aka bold, with <span class="strong">**asterisks**</span> or <span class="strong">__underscores__</span>.</span><br><span class="line"></span><br><span class="line">Strikethrough uses two tildes. ~~Scratch this.~~</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>. （斜体）</p><p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>. （粗体）</p><p>Strikethrough uses two tildes. <del>Scratch this.</del> （删除线）</p><h2 id="列表（Lists）"><a href="#列表（Lists）" class="headerlink" title="列表（Lists）"></a>列表（Lists）</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表（First item）</span><br><span class="line"><span class="bullet">2.</span> 有序列表（Second item）</span><br><span class="line"></span><br><span class="line"><span class="bullet">*</span> 无序列表（First item）</span><br><span class="line"><span class="bullet">-</span> 无序列表（Second item）</span><br><span class="line"><span class="bullet">+</span> 无序列表（Third item）</span><br></pre></td></tr></table></figure><p>❌ 切记无序列表不能混合使用，只能使用一种</p><ol><li>有序列表（First item）</li><li>有序列表（Second item）</li></ol><ul><li>无序列表（First item）</li></ul><h2 id="链接（links）"><a href="#链接（links）" class="headerlink" title="链接（links）"></a>链接（links）</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">[<span class="string">这是一个内联风格的链接</span>](<span class="link">https://www.google.com</span>)</span><br><span class="line">[<span class="string">这是一个带标题内联风格的链接</span>](<span class="link">https://www.google.com &quot;Google&#x27;s Homepage&quot;</span>)</span><br><span class="line">鼠标悬停查看标题</span><br></pre></td></tr></table></figure><p><a href="https://www.google.com/">这是一个内联风格的链接</a><br><a href="https://www.google.com/" title="Google&#39;s Homepage">这是一个带标题内联风格的链接</a><br>鼠标悬停查看标题</p><h2 id="图像（Images）"><a href="#图像（Images）" class="headerlink" title="图像（Images）"></a>图像（Images）</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">内联样式:</span><br><span class="line"></span><br><span class="line">![<span class="string">alt text</span>](<span class="link">https://hexo.io/icon/favicon-196x196.png &quot;Logo Title Text 1&quot;</span>)</span><br><span class="line"></span><br><span class="line">外链样式:</span><br><span class="line">![<span class="string">alt text</span>][<span class="symbol">logo</span>]</span><br><span class="line"></span><br><span class="line">[<span class="symbol">logo</span>]: <span class="link">https://hexo.io/icon/favicon-196x196.png &quot;Logo Title Text 2&quot;</span></span><br></pre></td></tr></table></figure><p>内联样式:</p><p><img src="https://hexo.io/icon/favicon-196x196.png" alt="alt text" title="Logo Title Text 1"></p><p>外链样式:<br><img src="https://hexo.io/icon/favicon-196x196.png" alt="alt text" title="Logo Title Text 2"></p><h2 id="区块引用（Blockquotes）"><a href="#区块引用（Blockquotes）" class="headerlink" title="区块引用（Blockquotes）"></a>区块引用（Blockquotes）</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 这是一个区块引用演示</span></span><br><span class="line"><span class="quote">&gt; #### 当然你可以与前面学过的混合使用</span></span><br><span class="line"><span class="quote">&gt;</span></span><br><span class="line"><span class="quote">&gt; - 无序列表</span></span><br><span class="line"><span class="quote">&gt; 1. 有序列表</span></span><br><span class="line"><span class="quote">&gt;</span></span><br><span class="line"><span class="quote">&gt;  <span class="emphasis">*这是一个斜体*</span> 当然也可以 <span class="strong">**这是一个粗体**</span></span></span><br></pre></td></tr></table></figure><blockquote><p>这是一个区块引用演示</p><h4 id="当然你可以与前面学过的混合使用"><a href="#当然你可以与前面学过的混合使用" class="headerlink" title="当然你可以与前面学过的混合使用"></a>当然你可以与前面学过的混合使用</h4><ul><li>无序列表</li></ul><ol><li>有序列表</li></ol><p> <em>这是一个斜体</em> 当然也可以 <strong>这是一个粗体</strong></p></blockquote><h2 id="（水平标尺）Horizontal-Rule"><a href="#（水平标尺）Horizontal-Rule" class="headerlink" title="（水平标尺）Horizontal Rule"></a>（水平标尺）Horizontal Rule</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"></span><br><span class="line">这是三种样式且功能相同</span><br><span class="line"></span><br><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="emphasis"><span class="strong"></span></span></span><br><span class="line"><span class="emphasis"><span class="strong">可以任选其一进行使用</span></span></span><br><span class="line"><span class="emphasis"><span class="strong"><span class="strong">____</span><span class="strong">____</span><span class="strong">____</span><span class="strong">____</span>_</span></span></span><br><span class="line"><span class="emphasis"><span class="strong"></span></span></span><br></pre></td></tr></table></figure><hr><p>这是三种样式且功能相同</p><hr><p>可以任选其一进行使用</p><hr><h2 id="（表情样式）Expression"><a href="#（表情样式）Expression" class="headerlink" title="（表情样式）Expression"></a>（表情样式）Expression</h2><p>😊  😃  ☺️<br>💙  💜  ❤️<br>这么炫酷的表情怎么写入文章呢?<br>那当然是<kbd>ctrl</kbd>+<kbd>c</kbd>+<kbd>v</kbd><br>没错它可以直接写入markdown当中，详见作者的<a href="https://gist.github.com/rxaviers/7360908">GitHub</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;欢迎来到 &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! 本文将记录Hexo+Markdown的学习手册！&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;h1 id=&quot;Hexo手册&quot;&gt;&lt;a href=&quot;#Hexo手册&quot; class=&quot;headerl</summary>
-      
-    
-    
-    
-    <category term="学习教程" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
     
   </entry>
   
