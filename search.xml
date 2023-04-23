@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>//post/hello-world.html</url>
+    <content><![CDATA[<blockquote>
+<p>Hello World！ 欢迎来到 <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>!<br>本文将记录 Hexo+Markdown 的学习手册！</p>
+</blockquote>
+<h1 id="Hexo-手册"><a href="#Hexo-手册" class="headerlink" title="Hexo 手册"></a>Hexo 手册</h1><h2 id="创建一个新的文章"><a href="#创建一个新的文章" class="headerlink" title="创建一个新的文章"></a>创建一个新的文章</h2><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;XXX&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="创建一个新的页面"><a href="#创建一个新的页面" class="headerlink" title="创建一个新的页面"></a>创建一个新的页面</h2><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page XXX</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="本地调试服务"><a href="#本地调试服务" class="headerlink" title="本地调试服务"></a>本地调试服务</h2><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="清理页面缓冲"><a href="#清理页面缓冲" class="headerlink" title="清理页面缓冲"></a>清理页面缓冲</h2><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="部署到远程站点（需要安装插件）"><a href="#部署到远程站点（需要安装插件）" class="headerlink" title="部署到远程站点（需要安装插件）"></a>部署到远程站点（需要安装插件）</h2><p>第一次安装插件后，以后就可以直接部署到远程站点，无需每次执行第一行代码</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></div>
+
+<hr>
+<h1 id="Markdown-手册"><a href="#Markdown-手册" class="headerlink" title="Markdown 手册"></a>Markdown 手册</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><div class="highlight-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line"><span class="section">#### H4</span></span><br><span class="line"><span class="section">##### H5</span></span><br><span class="line"><span class="section">###### H6</span></span><br></pre></td></tr></table></figure></div>
+
+<h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><div class="highlight-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表-喵</span><br><span class="line"><span class="bullet">2.</span> 有序列表-喵喵</span><br><span class="line"><span class="bullet">3.</span> 有序列表-喵喵喵</span><br><span class="line"><span class="bullet">*</span> 无序列表-喵</span><br><span class="line"><span class="bullet">-</span> 无序列表-喵喵</span><br><span class="line"><span class="bullet">+</span> 无序列表-喵喵喵</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li>有序列表-喵</li>
+<li>有序列表-喵喵</li>
+<li>有序列表-喵喵喵</li>
+</ol>
+<ul>
+<li>无序列表-喵</li>
+</ul>
+<ul>
+<li><p>无序列表-喵喵</p>
+</li>
+<li><p>无序列表-喵喵喵</p>
+</li>
+</ul>
+<h2 id="Inline-HTML"><a href="#Inline-HTML" class="headerlink" title="Inline HTML"></a>Inline HTML</h2><div class="highlight-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span>使用 <span class="language-xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>ctrl<span class="language-xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span>+<span class="language-xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>c<span class="language-xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span>来复制<span class="language-xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span>使用 <span class="language-xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>ctrl<span class="language-xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span>+<span class="language-xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>v<span class="language-xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span>来粘贴<span class="language-xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br></pre></td></tr></table></figure></div>
+
+<p>使用 <kbd>ctrl</kbd>+<kbd>c</kbd>来复制</p>
+<p>使用 <kbd>ctrl</kbd>+<kbd>v</kbd>来粘贴</p>
+
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><div class="highlight-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">I&#x27;m an inline-style link</span>](<span class="link">https://www.google.com</span>)</span><br><span class="line">[<span class="string">I&#x27;m an inline-style link with title</span>](<span class="link">https://www.google.com &quot;Google&#x27;s Homepage&quot;</span>)</span><br></pre></td></tr></table></figure></div>
+
+<p><a class="link"   href="https://www.google.com/" >I’m an inline-style link <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br><a class="link"   href="https://www.google.com/"  title="Google&#39;s Homepage">I’m an inline-style link with title <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h2 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h2><div class="highlight-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line">hover to see the title text:</span><br><span class="line"></span><br><span class="line">Inline-style:</span><br><span class="line"></span><br><span class="line">![<span class="string">alt text</span>](<span class="link">https://hexo.io/icon/favicon-196x196.png &quot;Logo Title Text 1&quot;</span>)</span><br><span class="line"></span><br><span class="line">Reference-style:</span><br><span class="line">![<span class="string">alt text</span>][<span class="symbol">logo</span>]</span><br><span class="line"></span><br><span class="line">[<span class="symbol">logo</span>]: <span class="link">https://hexo.io/icon/favicon-196x196.png &quot;Logo Title Text 2&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<p>hover to see the title text:</p>
+<p>Inline-style:</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://hexo.io/icon/favicon-196x196.png"
+                      alt="alt text" title="Logo Title Text 1"
+                ></p>
+<p>Reference-style:<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://hexo.io/icon/favicon-196x196.png"
+                      alt="alt text" title="Logo Title Text 2"
+                ></p>
+<h2 id="Horizontal-Rule"><a href="#Horizontal-Rule" class="headerlink" title="Horizontal Rule"></a>Horizontal Rule</h2><div class="highlight-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line"></span><br><span class="line">Hyphens</span><br><span class="line"></span><br><span class="line"><span class="strong">***</span></span><br><span class="line"><span class="strong"></span></span><br><span class="line"><span class="strong">Asterisks</span></span><br><span class="line"><span class="strong"></span></span><br><span class="line"><span class="strong">___</span></span><br><span class="line"><span class="strong"></span></span><br><span class="line"><span class="strong">Underscores</span></span><br></pre></td></tr></table></figure></div>
+
+<hr>
+<p>Hyphens</p>
+<hr>
+<p>Asterisks</p>
+<hr>
+<p>Underscores</p>
+]]></content>
+      <categories>
+        <category>学习教程</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Markdown</tag>
+        <tag>学习教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac使用技巧</title>
+    <url>//post/mac.html</url>
+    <content><![CDATA[<blockquote>
+<p>本文将记录本人使用 Mac 过程中的一些问题，以及解决技巧</p>
+</blockquote>
+<hr>
+<h1 id="解决-Mac-能上微信聊-QQ-但是打不开网页的问题"><a href="#解决-Mac-能上微信聊-QQ-但是打不开网页的问题" class="headerlink" title="解决 Mac 能上微信聊 QQ 但是打不开网页的问题"></a>解决 Mac 能上微信聊 QQ 但是打不开网页的问题</h1><p>在每次打开科学上网，重新启动 mac 就会出现 Mac 能上微信聊 QQ 但是打不开网页的问题在这里提供一下两种解决方案</p>
+<h2 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h2><ol>
+<li>点击桌面空白处</li>
+<li>按 <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd></li>
+<li>复制 <code>/Library/Preferences/SystemConfiguration/com.apple.Boot.plist</code></li>
+<li>粘贴</li>
+<li>点击前往</li>
+<li>只留下 <code>label com.apple.Boot.plist red</code> 文件，其他全部删除</li>
+<li>重新启动电脑即可</li>
+</ol>
+<h2 id="方案二"><a href="#方案二" class="headerlink" title="方案二"></a>方案二</h2><ol>
+<li>点击访达 -&gt; 菜单 -&gt; 前往 -&gt; 前往文件夹</li>
+<li>后续步骤按方案一第三步操作</li>
+</ol>
+<h1 id="技巧合集篇"><a href="#技巧合集篇" class="headerlink" title="技巧合集篇"></a>技巧合集篇</h1><ol>
+<li><kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>c</kbd> 查看系统所有可见文件</li>
+<li><kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>c</kbd> 显示系统所有隐藏文件</li>
+</ol>
+]]></content>
+      <categories>
+        <category>杂类技巧</category>
+      </categories>
+      <tags>
+        <tag>杂类技巧</tag>
+        <tag>Mac电脑技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自动刷课答题脚本安装教程</title>
+    <url>//post/scriptcat.html</url>
+    <content><![CDATA[<div class="note note-warning icon-padding"><i class="note-icon fa-solid fa-exclamation-circle"></i><p>以下教程仅用于个人研究、学习代码目的，为各位同学节省宝贵的学习时间，<code>请勿用于商业用途</code>。</p>
+</div>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://s1.vika.cn/space/2023/02/04/a98db4b54bab4bba88bf2008aa6012b9"
+                     
+                ></p>
+<p>随着开学季到来，大批大学生又要进入到各种大小网课当中，每日的刷课，刷作业搞的头都大了，那么今天给大家带来自动刷课答题脚本安装教程。</p>
+<h1 id="脚本猫的安装"><a href="#脚本猫的安装" class="headerlink" title="脚本猫的安装"></a>脚本猫的安装</h1><p><a class="link"   href="https://scriptcat.org/" >脚本猫 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>,一个可以执行用户脚本的浏览器扩展,万物皆可脚本化,让你的浏览器可以做更多的事情!</p>
+<p>持续兼容油猴脚本中,已兼容 90%+的油猴脚本,更多油猴特性完善中,并且另外支持更加强大的后台脚本和定时脚本!</p>
+<div class="note-large notel-blue"><div class="notel-title"><p>提示</p>
+</div><div class="notel-content"><p>请务必选择对应的浏览器安装扩展，否则无法正常安装成功。<br>windows 用户推荐使用微软自带的<code>Microsoft Edge 浏览器</code></p>
+<p>Mac 用户推荐使用<code>Firefox 浏览器</code></p>
+<p><code>Google Chrome 浏览器</code>商城需要科学上网工具 🔧 才可以正常访问</p>
+ </div></div>
+
+<p>其他浏览器，可以从<a class="link"   href="https://github.com/scriptscat/scriptcat/releases" >Github Release <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>页面中,下载<code>zip</code>&#x2F;<code>crx</code>文件手动进行安装,但是这是<code>不推荐</code>的，因为它操作难度相对较大，且无法自动更新扩展。</p>
+<blockquote>
+<p>推荐从下列扩展商店中安装扩展</p>
+<ul>
+<li><a class="link"   href="https://microsoftedge.microsoft.com/addons/detail/scriptcat/liilgpjgabokdklappibcjfablkpcekh" >Microsoft Edge <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://chrome.google.com/webstore/detail/scriptcat/ndcooeababalnlpkfedmmbbbgkljhpjf" >Google Chrome <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://addons.mozilla.org/zh-CN/firefox/addon/scriptcat/" >Firefox <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ul>
+</blockquote>
+<p>安装好后，扩展程序中就拥有<code>ScriptCat</code>了<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://s1.vika.cn/space/2023/02/04/45165156b9214f4a814138a7f9bee34e"
+                     
+                ></p>
+<h1 id="脚本的安装"><a href="#脚本的安装" class="headerlink" title="脚本的安装"></a>脚本的安装</h1><h2 id="OCS-网课助手"><a href="#OCS-网课助手" class="headerlink" title="OCS 网课助手"></a>OCS 网课助手</h2><p>这里提供 OCS 网课助手，支持各平台网课学习，支持超星学习通，知道智慧树，智慧职教（职教云），等网课的学习，作业，考试功能。</p>
+<p>官网&#x2F;教程： <a class="link"   href="https://docs.ocsjs.com/" >https://docs.ocsjs.com/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>所有功能请看： - <a class="link"   href="https://docs.ocsjs.com/feat-list" >OCS 网课助手 - 功能列表 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<a class="button  regular" href='https://scriptcat.org/scripts/code/367/OCS%20%E7%BD%91%E8%AF%BE%E5%8A%A9%E6%89%8B.user.js' title='点击这里安装'><i class='fa-solid fa-hand-back-point-up'></i> 点击这里安装</a>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://s1.vika.cn/space/2023/02/04/2760f872ffa8407eb9440796b9f5d157"
+                     
+                ></p>
+<p>安装好后不会有任何提示，你可以直接访问<code>超星学习通</code>或者其他网课平台就可以看到它已经激活了.</p>
+<h2 id="全平台自动答题助手"><a href="#全平台自动答题助手" class="headerlink" title="全平台自动答题助手"></a>全平台自动答题助手</h2><p>OCS 的答题准确率实在不敢恭维，所以这里推荐自动答题助手 内置免费题库和收费题库</p>
+<ul>
+<li>免费题库：涵盖大部分公选课答案</li>
+<li>收费题库：涵盖面积更广，并且没有搜索到的题库会自动加入后台，实时采集答案</li>
+</ul>
+<p>它的答题是非常强大的，支持【超星学习通】【智慧树】【职教云系列】【雨课堂】【继续教育类】【小鹅通】【安徽继续教育】 【上海开放大学】 【华侨大学自考网络助学平台】【人卫慕课】【国家开放大学】【浙江省高等学校在线开放课程共享平台】【国地质大学远程与继续教育学院】【浙江省高等教育自学考试网络助学平台】 【湖南高等学历继续教育】 【优学院】 【学起 Plus】【青书学堂】 【学堂在线】【英华学堂】【广开网络教学平台】等平台的测验考试，内置题库，自动答题功能全聚合。</p>
+<a class="button  regular" href='https://scriptcat.org/scripts/code/616/%E3%80%90%E4%B8%87%E8%83%BD%E3%80%91%E5%85%A8%E5%B9%B3%E5%8F%B0%E8%87%AA%E5%8A%A8%E7%AD%94%E9%A2%98%E8%84%9A%E6%9C%AC.user.js' title='点击这里安装'><i class='fa-solid fa-hand-back-point-up'></i> 点击这里安装</a>
+
+<h2 id="题海-x-划词搜题"><a href="#题海-x-划词搜题" class="headerlink" title="题海 x 划词搜题"></a>题海 x 划词搜题</h2><p>全平台自带答题助手分为免费题库和付费题库，有时候免费题库就会搜不到题，对于<code>白嫖党</code>来说,这里就推荐使用这个脚本了。</p>
+<p>所有网页均支持划词搜题,也可输入文本搜题悬浮窗可拖动可关闭,可个性化设置解除网页禁止复制限制适用于各类问答,网课问题,竞赛问题,专业术语,业务名称,情景问题,在线作业等。</p>
+<a class="button  regular" href='https://scriptcat.org/scripts/code/612/%E9%A2%98%E6%B5%B7%20x%20%E5%88%92%E8%AF%8D%E6%90%9C%E9%A2%98.user.js' title='点击这里安装'><i class='fa-solid fa-hand-back-point-up'></i> 点击这里安装</a>
+
+<h2 id="马小智公众号搜题"><a href="#马小智公众号搜题" class="headerlink" title="马小智公众号搜题"></a>马小智公众号搜题</h2><p>这是由本人经营的公众号，由<code>河北瓜子科技有限公司</code>提供部分技术接口.在这里也提供了题库，可以进行搜题功能，未来还会在公众号加入更多的功能噢！<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://s1.vika.cn/space/2023/02/04/c34ede2f417148f599da15d96fc6572e"
+                     
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://s1.vika.cn/space/2023/02/04/ac422a7349294b778227c72c30c7dd42"
+                     
+                ></p>
+]]></content>
+      <categories>
+        <category>杂类技巧</category>
+      </categories>
+      <tags>
+        <tag>Script Cat</tag>
+        <tag>脚本</tag>
+        <tag>刷课脚本</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图床方案汇总</title>
+    <url>//post/tuku.html</url>
+    <content><![CDATA[<p>目前 MarkDown 作为一种程序员必备的轻量级标记语言，避免了富文本编辑器换平台就要重新排版的繁琐，使我们可以专注于技术的输出，但使用 markdown 也有弊端，那就是图片的存储问题，markdown 文件要用到图片时必须是一个链接。各个平台都有自己的图片存储方法，在不使用图床的情况下，同一篇文章发布到不同的平台需要单独上传图片一次。如果都放本地这样实在是太麻烦了。</p>
+<blockquote>
+<p>目前最好的解决办法就是使用图床来存储图片<br>本文在<a class="link"   href="https://www.fomal.cc/posts/d7fb1ba1.html" >Fomalhaut 免费图床综合教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>上转载以及改进<br>本文不定期更新，有更好的图库可以评论留言噢！</p>
+</blockquote>
+<h1 id="基于-Github-仓库的图床"><a href="#基于-Github-仓库的图床" class="headerlink" title="基于 Github 仓库的图床"></a>基于 Github 仓库的图床</h1><blockquote>
+<p>优点：</p>
+<ol>
+<li>很稳定不会跑路，用的是自己的仓库和公共托管平台</li>
+<li>图片可以增量快速更新和跨设备管理</li>
+<li>可以进行版本管理和查看之前的版本</li>
+<li>有公共 CDN，速度还是不错的</li>
+<li>资源格式可以任意都行，包括 css、js 等</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li>每个仓库限制 1G，超过要新建另一个仓库</li>
+<li>git 管理可能偶尔会遇到网络和公钥失效问题</li>
+</ol>
+</blockquote>
+<h2 id="建立-Github-仓库"><a href="#建立-Github-仓库" class="headerlink" title="建立 Github 仓库"></a>建立 Github 仓库</h2><ol>
+<li>进入<a class="link"   href="https://github.com/" >Github 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>注册并登录自己的账号，到自己的个人主页，点击右上角的<code>+</code>，并选择<code>New Repository</code>创建自己的仓库。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://s1.vika.cn/space/2022/12/03/304f38e77839471a87abbcad039116a4"
+                     
+                ></li>
+<li>仓库名字随意，描述也可以自由发挥，可见性最好选<code>public</code>，<code>Readme</code>文件可以创建，然后点击<code>Create Repository</code>创建仓库。</li>
+<li>原文的该处是使用 git 提交图片，步骤较为复杂，如果感兴趣可以前往<a class="link"   href="https://www.fomal.cc/posts/d7fb1ba1.html" >Fomalhaut 免费图床综合教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>进行查看，本文提供更加方便的上传管理。</li>
+<li>这里推荐使用<a class="link"   href="https://picx.xpoet.cn/" > PicX 图床管理 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，仅需要一个拥有 repo 权限的 GitHub Token 即可进行管理，且提供图片压缩和国内 CDN 外链。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.marzm.cn/image/1.4sr773z5ql40.webp"
+                     
+                ></li>
+<li>关于如何拥有获取 Token 原文已经写的很清楚，本文不在讲述。</li>
+</ol>
+<ul>
+<li><a class="link"   href="https://picx.xpoet.cn/" >PicX 图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://github.com/XPoet/picx" >Github 地址 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://picx.xpoet.cn/#/tutorials" >获取 Token 教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ul>
+<h2 id="Staticaly-CDN-加速"><a href="#Staticaly-CDN-加速" class="headerlink" title="Staticaly CDN 加速"></a>Staticaly CDN 加速</h2><p>使用上方 <a class="link"   href="https://picx.xpoet.cn/" >PicX 图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>进行图床管理是自带 Staticaly CDN 加速按钮的，这里不多做介绍。<br><code>Staticaly CDN</code>的应用规则如下：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 格式 其中 user是用户名  repo是仓库名  version代表版本(tag或者分支 默认为main)  flie是文件路径</span><br><span class="line">https://cdn.staticaly.com/gh/user/repo@version/file</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="Vercel-部署"><a href="#Vercel-部署" class="headerlink" title="Vercel 部署"></a>Vercel 部署</h2><blockquote>
+<p>此方法加载速度较快，但是需要域名自定义绑定，其优点也是可以绑定自定义域了，目前 Vercel 每个月限制流量 100GB</p>
+</blockquote>
+<ol>
+<li>进入<a class="link"   href="https://vercel.com/" >Vercel <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>控制面板新建项目，并通过<code>Github</code>继续，选择导入刚刚创建的仓库，然后直接部署即可<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.marzm.cn/image/QQ20230204-154207@2x.340wl45ln9w0.webp"
+                     
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.marzm.cn/image/QQ20230204-154255@2x.5ftn8d3cgs80.webp"
+                     
+                ></li>
+<li>进入该项目控制台后，选择右上角的<code>View Domains</code>添加新的域名，添加一个自己域名的二级域名，然后在你对应的域名解析控制台添加对应解析，等待生效。<br>因 Vercel 被国内墙了，所以把它提供的 CNAME 解析值<br><code>cname.vercel-dns.com.</code> 改为<code>cname-china.vercel-dns.com.</code><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.marzm.cn/image/QQ20230204-154856@2x.1b6f71s41j28.webp"
+                     
+                ></li>
+<li>最后即可通过自定义域名+资源路径即可访问到对应的资源，这里的地址和刚才<a class="link"   href="https://picx.xpoet.cn/" >PicX 图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>配置的地址是一样的，例如我这里为：</li>
+</ol>
+<ul>
+<li><a class="link"   href="https://jsd.cdn.zzko.cn/gh/xiaomait/picgo@master/image/banner.webp" >https://jsd.cdn.zzko.cn/gh/xiaomait/picgo@master/image/banner.webp <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://cdn.staticaly.com/gh/xiaomait/picgo@master/image/banner.webp" >https://cdn.staticaly.com/gh/xiaomait/picgo@master/image/banner.webp <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://cdn.marzm.cn/image/banner.webp" >https://cdn.marzm.cn/image/banner.webp <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ul>
+<ol>
+<li>原文提供了<code>Cloudflare 部署</code>，此方法速度比 Vercel 稍慢，但是可以不需要域名，而我更加推荐使用<code>Vercel</code>或者直接使用<a class="link"   href="https://picx.xpoet.cn/" >PicX 图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>提供的国内 CDN 外链也是比较不错的选择，如果感兴趣的小伙伴可以去看一下噢！</li>
+</ol>
+<h1 id="免费公共图床盘点"><a href="#免费公共图床盘点" class="headerlink" title="免费公共图床盘点"></a>免费公共图床盘点</h1><table>
+<thead>
+<tr>
+<th>图床</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a class="link"   href="https://www.imgtp.com/" >imgtp <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">无需注册，国内服务器，最大支持 15MB【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://www.imgbed.com/" >imgbed <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">无需注册，国内服务器，最大支持 20MB【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://www.superbed.cn/" >聚合图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">要注册，国内服务器【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://moetu.org/" >meotu <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">要注册，国内服务器【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://www.z4a.net/" >z4a 图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">要注册，国内服务器【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://sm.ms/" >sm.ms <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">要注册，海外服务器【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://niupic.com/" >牛图网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">无需注册，日本服务器 【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://imgbb.com/" >imgbb <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">无需注册，亚太服务器【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://upload.cc/" >upload <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">无需注册，海外服务器 【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://catbox.moe/" >catbox <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">无需注册，海外服务器 【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://imgtu.com/" >路过图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">要注册，海外服务器【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://imgtg.com/" >TG 图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">要注册，国内外服务器【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://postimages.org/" >Postimages <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">无需注册，国外服务器速度快【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://imgloc.com/" >imgloc <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">无需注册，国内服务器，最大支持 6MB【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://yh-pic.ihcloud.net/" >映画の妖火图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">无需注册，聚合式 CDN 图床【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://www.hualigs.cn/" >遇见图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">无需注册，聚合式 CDN 图床【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://www.helloimg.com/" >hello 图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">要注册，国内 CDN【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://im.ge/" >IM.GE <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">无需注册香港 CDN【免费】</td>
+</tr>
+<tr>
+<td><a class="link"   href="https://cloudimge.com/" >云图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></td>
+<td align="center">全球 CDN【免费】</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>以下图床经过测试，是国内速度访问相对快的图床。</p>
+<ul>
+<li><a class="link"   href="https://www.helloimg.com/" >hello 图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://imgtg.com/" >TG 图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://cloudimge.com/" >云图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ul>
+</blockquote>
+<h1 id="图床管理工具"><a href="#图床管理工具" class="headerlink" title="图床管理工具"></a>图床管理工具</h1><p>选择好图床后肯定就是上传并使用图片了，这时就会面对一个问题，那就是每次都要去图床上传，然后复制链接，然后回到使用图片的平台粘贴使用。特别麻烦。所以就出现了图床管理工具帮助我们快速上传图片并获取图片 URL 链接。这样就省去了自己操作的繁琐。</p>
+<p>以下是一些优秀的图床管理工具</p>
+<ul>
+<li><a class="link"   href="https://picx.xpoet.cn/" >PicX 图床 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>、<br><a class="link"   href="https://github.com/XPoet/picx" >Github 地址 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>(网页端)</li>
+<li><a class="link"   href="https://molunerfinn.com/PicGo/" >PicGo 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>、<a class="link"   href="https://github.com/Molunerfinn/PicGo" >Github 地址 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>(windows 系统、mac 系统)</li>
+<li><a class="link"   href="https://github.com/PicGo/vs-picgo" >VScode-PicGo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 插件</li>
+<li><a class="link"   href="https://github.com/ShareX/ShareX" >ShareX 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>、<a class="link"   href="https://github.com/ShareX/ShareX" >Github 地址 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>(windows 系统)</li>
+<li><a class="link"   href="https://blog.svend.cc/upic/" >uPic 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>、<a class="link"   href="https://github.com/gee1k/uPic" >Github 地址 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>（mac 系统）</li>
+<li><a class="link"   href="https://www.xiebruce.top/17.html" >PicUploader 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>、<a class="link"   href="https://github.com/xiebruce/PicUploader" >Github 地址 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>(windows 系统、mac 系统)</li>
+<li><a class="link"   href="https://github.com/pluveto/upgit" >uPgit <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>(windows 系统、mac 系统、linux 系统)</li>
+</ul>
+<p>强烈推荐 PicGo，PicGo 支持 smms、 又拍云 、七牛云 、 阿里云 OSS、 腾讯云 COS、微博、Github、 Gitee、 Amazon S3、自定义上传接口。（还支持其他储存）而且还可以选择上传前压缩图片。压缩工具都省了。</p>
+<h1 id="PicGo-插件"><a href="#PicGo-插件" class="headerlink" title="PicGo 插件"></a>PicGo 插件</h1><p>PicGo 大家灰常的熟悉，不多做介绍，这里主要讲解 PicGo 插件<br>PicGo 开源地址：<a class="link"   href="https://github.com/Molunerfinn/PicGo" >Molunerfinn&#x2F;PicGo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h2 id="web-uploader-插件"><a href="#web-uploader-插件" class="headerlink" title="web-uploader 插件"></a>web-uploader 插件</h2><p>使用 web-uploader 插件可以实现自定义图床上传<br>需要根据选择图片提供的 API 自定义<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://s1.vika.cn/space/2023/02/03/9a0c94b7f88848158fbef338b1462245"
+                     
+                ></p>
+<h2 id="Vika-插件"><a href="#Vika-插件" class="headerlink" title="Vika 插件"></a>Vika 插件</h2><p>Vika 图床的服务器在国内，速度是比较快的。<br>所以在这里强烈推荐<a class="link"   href="https://vika.cn/?inviteCode=40659323" >Vika <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，虽然它做了 1G📎 的限制，但是可以通过 V 币免费获取额度，新用户填写邀请码后，双方都可以获得 1000V 币。<br>填写博主的邀请码 <code>40659323</code> 大家一起白嫖噢！</p>
+<ol>
+<li><p>首先在 Picgo 里面安装 Vikadata 的插件<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/image-7.webp"
+                     
+                ></p>
+</li>
+<li><p>我们要填的信息有下面这几项：<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/1672391987585.webp"
+                     
+                ></p>
+</li>
+<li><p>进入<a class="link"   href="https://vika.cn/?inviteCode=40659323" >维格表官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，注册自己的账号并登录，新建一个空白的维格表<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/1672392200825.webp"
+                     
+                ></p>
+</li>
+<li><p>随后点击左下角头像的个人设置，绑定自己的邮箱后，获取<code>API Token</code><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/1672392200835.webp"
+                     
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/1672392200842.webp"
+                     
+                ></p>
+</li>
+<li><p>进入刚刚创建的表格后，点击上边的<code>API</code>，进入 API 界面后，依次点击显示<code>API Token</code>-&gt;<code>Get 获取</code>，然后图中框起来的就是我们需要的<code>维格表ID</code>和<code>API Token</code><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/1672392201560.webp"
+                     
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/1672392249317.webp"
+                     
+                ></p>
+</li>
+<li><p>填进去对应位置后，到上传区域，把图床换成维格表，试试拖拽图片能不能上传！</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>建站教程</category>
+      </categories>
+      <tags>
+        <tag>性能优化</tag>
+        <tag>建站教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>初学JS必会的10种Javascript代码优雅写法</title>
+    <url>//post/javascript.html</url>
+    <content><![CDATA[<blockquote>
+<p>当我们刚开始学习 JS 代码时，我们只需要掌握 JS 中对应知识点就好，随着对 JS 代码的熟悉程度，我们就要思考如何写出更优雅，更简洁的代码。<br>接下来我分享 10 种常用 JS 代码功能，通过常规写法和优雅写法的对比，来体现其优雅和简洁性。代码中用了 ES6 新特性，如果你对 ES6 不了解，可以先收藏好。在后期的 VUE 中，基本都在和 ES6 打交道</p>
+</blockquote>
+<h1 id="数组合并"><a href="#数组合并" class="headerlink" title="数组合并"></a>数组合并</h1><h2 id="常规写法"><a href="#常规写法" class="headerlink" title="常规写法"></a>常规写法</h2><p>利用 concat 方法来合并数组</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> apples = [<span class="string">&quot;红苹果&quot;</span>, <span class="string">&quot;绿苹果&quot;</span>];</span><br><span class="line"><span class="keyword">const</span> fruits = [<span class="string">&quot;西瓜&quot;</span>, <span class="string">&quot;草莓&quot;</span>, <span class="string">&quot;葡萄&quot;</span>].<span class="title function_">concat</span>(apples);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(fruits); <span class="comment">// [&#x27;西瓜&#x27;, &#x27;草莓&#x27;, &#x27;葡萄&#x27;, &#x27;红苹果&#x27;, &#x27;绿苹果&#x27;]</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="优雅写法"><a href="#优雅写法" class="headerlink" title="优雅写法"></a>优雅写法</h2><p>利用 ES6 中的 <code>...扩展运算符</code> 来合并数组</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> apples = [<span class="string">&quot;红苹果&quot;</span>, <span class="string">&quot;绿苹果&quot;</span>];</span><br><span class="line"><span class="keyword">const</span> fruits = [<span class="string">&quot;西瓜&quot;</span>, <span class="string">&quot;草莓&quot;</span>, <span class="string">&quot;葡萄&quot;</span>, ...apples];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(fruits);<span class="comment">//[&#x27;西瓜&#x27;, &#x27;草莓&#x27;, &#x27;葡萄&#x27;, &#x27;红苹果&#x27;, &#x27;绿苹果&#x27;]</span></span><br></pre></td></tr></table></figure></div>
+
+<h1 id="数组中取值"><a href="#数组中取值" class="headerlink" title="数组中取值"></a>数组中取值</h1><h2 id="常规写法-1"><a href="#常规写法-1" class="headerlink" title="常规写法"></a>常规写法</h2><p>利用数组下标一个一个从数组中取数据</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> num = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"><span class="keyword">const</span> num1 = num[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">const</span> num2 = num[<span class="number">1</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(num1, num2); <span class="comment">//1 2</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="优雅写法-1"><a href="#优雅写法-1" class="headerlink" title="优雅写法"></a>优雅写法</h2><p>利用 ES6 的解构赋值来取值</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> num = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"><span class="keyword">const</span> [num1, num2] = num;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(num1, num2);</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="对象取值"><a href="#对象取值" class="headerlink" title="对象取值"></a>对象取值</h1><h2 id="常规写法-2"><a href="#常规写法-2" class="headerlink" title="常规写法"></a>常规写法</h2><p>对象.属性名 的方式获取属性值</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> user = &#123;</span><br><span class="line">   <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>,</span><br><span class="line">   <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> name = user.<span class="property">name</span>;</span><br><span class="line"><span class="keyword">const</span> age = user.<span class="property">age</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(name, age);<span class="comment">//&quot;张三&quot; 30</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="优雅写法-2"><a href="#优雅写法-2" class="headerlink" title="优雅写法"></a>优雅写法</h2><p>利用 ES6 的解构赋值来取值</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> user = &#123;</span><br><span class="line">   <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>,</span><br><span class="line">   <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> &#123; name, age &#125; = user;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(name, age); <span class="comment">// 张三 30</span></span><br></pre></td></tr></table></figure></div>
+
+<h1 id="数组循环"><a href="#数组循环" class="headerlink" title="数组循环"></a>数组循环</h1><h2 id="常规写法-3"><a href="#常规写法-3" class="headerlink" title="常规写法"></a>常规写法</h2><p>利用 for 循环来遍历数组，从而取值</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> fruits = [<span class="string">&quot;西瓜&quot;</span>, <span class="string">&quot;草莓&quot;</span>, <span class="string">&quot;葡萄&quot;</span>, <span class="string">&quot;苹果&quot;</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; fruits.<span class="property">length</span>; i++) &#123;</span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(fruits[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="优雅写法-3"><a href="#优雅写法-3" class="headerlink" title="优雅写法"></a>优雅写法</h2><p>利用 ES6 的 for … of 来遍历数组取值</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> fruits = [<span class="string">&quot;西瓜&quot;</span>, <span class="string">&quot;草莓&quot;</span>, <span class="string">&quot;葡萄&quot;</span>, <span class="string">&quot;苹果&quot;</span>];</span><br><span class="line"><span class="keyword">for</span> (fruit <span class="keyword">of</span> fruits) &#123;</span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(fruit);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="回调函数"><a href="#回调函数" class="headerlink" title="回调函数"></a>回调函数</h1><h2 id="常规写法-4"><a href="#常规写法-4" class="headerlink" title="常规写法"></a>常规写法</h2><p>forEach 中回调函数为普通函数</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> fruits = [<span class="string">&quot;西瓜&quot;</span>, <span class="string">&quot;草莓&quot;</span>, <span class="string">&quot;葡萄&quot;</span>, <span class="string">&quot;苹果&quot;</span>];</span><br><span class="line">fruits.<span class="title function_">forEach</span>(<span class="keyword">function</span> (<span class="params">fruit</span>) &#123;</span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(fruit); <span class="comment">//西瓜 草莓 葡萄 苹果</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="优雅写法-4"><a href="#优雅写法-4" class="headerlink" title="优雅写法"></a>优雅写法</h2><p>forEach 中回调函数为箭头函数，如果箭头函数中只有一句代码，则可以省略{ }</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> fruits = [<span class="string">&quot;西瓜&quot;</span>, <span class="string">&quot;草莓&quot;</span>, <span class="string">&quot;葡萄&quot;</span>, <span class="string">&quot;苹果&quot;</span>];</span><br><span class="line">fruits.<span class="title function_">forEach</span>(<span class="function">(<span class="params">fruit</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(fruit)); <span class="comment">//西瓜 草莓 葡萄 苹果</span></span><br></pre></td></tr></table></figure></div>
+
+<h1 id="数组搜索"><a href="#数组搜索" class="headerlink" title="数组搜索"></a>数组搜索</h1><h2 id="常规写法-5"><a href="#常规写法-5" class="headerlink" title="常规写法"></a>常规写法</h2><p>数组中保存着每一条水果的信息，我们通过输入水果名，到数组中查找到对应的信息。</p>
+<p>利用常规的 for 循环遍历来查找。</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> fruits = [</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">&quot;苹果&quot;</span>, <span class="attr">order</span>: <span class="number">1</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">&quot;李子&quot;</span>, <span class="attr">order</span>: <span class="number">4</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">&quot;香蕉&quot;</span>, <span class="attr">order</span>: <span class="number">2</span> &#125;,</span><br><span class="line">];</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">getApples</span>(<span class="params">arr, value</span>) &#123;</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">let</span> index = <span class="number">0</span>; index &lt; arr.<span class="property">length</span>; index++) &#123;</span><br><span class="line">       <span class="keyword">if</span> (arr[index].<span class="property">name</span> === value) &#123;</span><br><span class="line">           <span class="keyword">return</span> arr[index];</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> result = <span class="title function_">getApples</span>(fruits, <span class="string">&quot;苹果&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(result); <span class="comment">// &#123; name: &quot;苹果&quot;, order: 1 &#125;</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="优雅写法-5"><a href="#优雅写法-5" class="headerlink" title="优雅写法"></a>优雅写法</h2><p>利用数组的 find 方法来实现搜索</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> fruits = [</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">&quot;苹果&quot;</span>, <span class="attr">order</span>: <span class="number">1</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">&quot;李子&quot;</span>, <span class="attr">order</span>: <span class="number">4</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">&quot;香蕉&quot;</span>, <span class="attr">order</span>: <span class="number">2</span> &#125;,</span><br><span class="line">];</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">getApples</span>(<span class="params">arr, value</span>) &#123;</span><br><span class="line">   <span class="keyword">return</span> arr.<span class="title function_">find</span>(<span class="function">(<span class="params">obj</span>) =&gt;</span> obj.<span class="property">name</span> === value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> result = <span class="title function_">getApples</span>(fruits, <span class="string">&quot;李子&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(result);</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="字符串转换为数字"><a href="#字符串转换为数字" class="headerlink" title="字符串转换为数字"></a>字符串转换为数字</h1><h2 id="常规写法-6"><a href="#常规写法-6" class="headerlink" title="常规写法"></a>常规写法</h2><p>利用 parseInt 来实现</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> num =<span class="built_in">parseInt</span>(<span class="string">&quot;10&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(num,<span class="keyword">typeof</span> num); <span class="comment">// 10   &quot;number&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="优雅写法-6"><a href="#优雅写法-6" class="headerlink" title="优雅写法"></a>优雅写法</h2><p>利用+ 号来实现，不过只针对纯数字的字符串有效</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> num = +<span class="string">&quot;10&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(num,<span class="keyword">typeof</span> num); <span class="comment">//=&gt; 10   &quot;number&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(+<span class="string">&quot;10&quot;</span> === <span class="number">10</span>); <span class="comment">// true;</span></span><br></pre></td></tr></table></figure></div>
+
+<h1 id="null-值初始化"><a href="#null-值初始化" class="headerlink" title="null 值初始化"></a>null 值初始化</h1><h2 id="常规写法-7"><a href="#常规写法-7" class="headerlink" title="常规写法"></a>常规写法</h2><p>通过 if 判断，如果为 null，则初始化值为“普通用户”</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//获取用户角色</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">getUserRole</span>(<span class="params">role</span>) &#123;</span><br><span class="line">   <span class="keyword">let</span> userRole;</span><br><span class="line">   <span class="keyword">if</span> (role) &#123;</span><br><span class="line">       userRole = role;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">       userRole = <span class="string">&quot;普通用户&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">   <span class="keyword">return</span> userRole;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">getUserRole</span>()); <span class="comment">//普通用户</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">getUserRole</span>(<span class="string">&quot;管理员&quot;</span>)); <span class="comment">//管理员</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="优雅写法-7"><a href="#优雅写法-7" class="headerlink" title="优雅写法"></a>优雅写法</h2><p>通过 || 或短路运算符来实现</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">getUserRole</span>(<span class="params">role</span>) &#123;</span><br><span class="line">   <span class="keyword">return</span> role || <span class="string">&quot;普通用户&quot;</span>; <span class="comment">// 默认值定义的常见方法</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">getUserRole</span>()); <span class="comment">// &quot;普通用户&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">getUserRole</span>(<span class="string">&quot;管理员&quot;</span>)); <span class="comment">// &quot;管理员&quot;;</span></span><br></pre></td></tr></table></figure></div>
+
+<h1 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h1><h2 id="常规写法-8"><a href="#常规写法-8" class="headerlink" title="常规写法"></a>常规写法</h2><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> name = <span class="string">&quot;张三&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> age = <span class="number">23</span>;</span><br><span class="line"><span class="keyword">const</span> message = <span class="string">&quot;大家好,我叫&quot;</span> + name + <span class="string">&quot;今年&quot;</span> + age + <span class="string">&quot;岁了！&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(message); <span class="comment">//大家好，我叫张三，今年23岁了！</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="优雅写法-8"><a href="#优雅写法-8" class="headerlink" title="优雅写法"></a>优雅写法</h2><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> name = <span class="string">&quot;张三&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> age = <span class="number">23</span>;</span><br><span class="line"><span class="keyword">const</span> message = <span class="string">`大家好，我叫<span class="subst">$&#123;name&#125;</span>，今年<span class="subst">$&#123;age&#125;</span>岁了！`</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(message); <span class="comment">// Hi DevPoint!</span></span><br></pre></td></tr></table></figure></div>
+
+<h1 id="对象合并"><a href="#对象合并" class="headerlink" title="对象合并"></a>对象合并</h1><h2 id="常规写法-9"><a href="#常规写法-9" class="headerlink" title="常规写法"></a>常规写法</h2><p>利用 for 循环来遍历</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> employee = &#123; <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>, <span class="attr">age</span>: <span class="number">30</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> salary = &#123; <span class="attr">grade</span>: <span class="string">&quot;A&quot;</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> summary = salary; <span class="comment">//用来做合并后对象</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> key <span class="keyword">in</span> employee) &#123;</span><br><span class="line">   summary[key] = employee[key];</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(summary); <span class="comment">// &#123;grade: &#x27;A&#x27;, name: &#x27;张三&#x27;, age: 30&#125;</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="优雅写法-9"><a href="#优雅写法-9" class="headerlink" title="优雅写法"></a>优雅写法</h2><p>利用 es6 的扩展运算符和解构赋值来实现</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> employee = &#123; <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>, <span class="attr">age</span>: <span class="number">30</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> salary = &#123; <span class="attr">grade</span>: <span class="string">&quot;A&quot;</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> summary = &#123; ...employee, ...salary &#125;;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(summary); <span class="comment">// &#123; name: &#x27;张三&#x27;, age: 30, grade: &#x27;A&#x27; &#125;</span></span><br></pre></td></tr></table></figure></div>
+]]></content>
+      <categories>
+        <category>前端教程</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+        <tag>Javascript</tag>
+        <tag>前端教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git全套使用教程</title>
+    <url>//post/git.html</url>
+    <content><![CDATA[<h1 id="Git-常用命令速查表"><a href="#Git-常用命令速查表" class="headerlink" title="Git 常用命令速查表"></a>Git 常用命令速查表</h1><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.staticaly.com/gh/xiaomait/picgo@master/image/git.webp"
+                     
+                ></p>
+<div class="note note-warning icon-padding"><i class="note-icon fa-solid fa-exclamation-circle"></i><p>因一些特殊问题，现在的默认分支为<code>main</code></p>
+</div>
+]]></content>
+      <categories>
+        <category>学习教程</category>
+      </categories>
+      <tags>
+        <tag>学习教程</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>快速构建Vue3项目</title>
+    <url>//post/vue3.html</url>
+    <content><![CDATA[<h1 id="Vue3-提供的语法提示功能插件-–-Volar"><a href="#Vue3-提供的语法提示功能插件-–-Volar" class="headerlink" title="Vue3 提供的语法提示功能插件 – Volar"></a>Vue3 提供的语法提示功能插件 – Volar</h1><ul>
+<li><a class="link"   href="https://code.visualstudio.com/" >VSCode <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> + <a class="link"   href="https://marketplace.visualstudio.com/items?itemName=vue.volar" >Volar <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ul>
+<h1 id="Node-js-的下载"><a href="#Node-js-的下载" class="headerlink" title="Node.js 的下载"></a>Node.js 的下载</h1><p>中文官网：<a class="link"   href="https://nodejs.org/zh-cn" >https://nodejs.org/zh-cn <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>镜像站点：<a class="link"   href="https://npmmirror.com/mirrors/node/" >https://npmmirror.com/mirrors/node/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h2 id="更换-npmmirror-镜像源"><a href="#更换-npmmirror-镜像源" class="headerlink" title="更换 npmmirror 镜像源"></a>更换 npmmirror 镜像源</h2><p>修改 npm 至新的淘宝镜像源：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npmmirror.com</span><br></pre></td></tr></table></figure></div>
+
+<p>查看当前使用的镜像地址命令</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure></div>
+
+<p>如果返回 <code>https://registry.npmmirror.com</code> 说明镜像配置成功。</p>
+<h2 id="使用-pnpm-代替-npm"><a href="#使用-pnpm-代替-npm" class="headerlink" title="使用 pnpm 代替 npm"></a>使用 pnpm 代替 npm</h2><p>通过<code>npm</code>安装，也可以在官网查看<a class="link"   href="https://pnpm.io/zh/installation" >其他安装方式 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>Windows 系统</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.Windows 系统</span><br><span class="line">npm install -g pnpm</span><br><span class="line">2.Mac 系统</span><br><span class="line">sudo npm install -g pnpm</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="使用-Vite-构建-vue-项目的方法"><a href="#使用-Vite-构建-vue-项目的方法" class="headerlink" title="使用 Vite 构建 vue 项目的方法"></a>使用 Vite 构建 vue 项目的方法</h1><h2 id="安装-Vue3-Pinia-VueRouter"><a href="#安装-Vue3-Pinia-VueRouter" class="headerlink" title="安装 Vue3+Pinia+VueRouter"></a>安装 Vue3+Pinia+VueRouter</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm init vue@latest</span><br><span class="line">或者</span><br><span class="line">pnpm create vue</span><br></pre></td></tr></table></figure></div>
+
+<p>依次需要配置项目名 、选择自己需要的插件<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://s1.vika.cn/space/2023/04/06/71965284bc814cc7be5fb7ebeced8cdb"
+                     
+                ></p>
+<p><code>cd vue3</code> 进入创建的项目包</p>
+<p><code>npm i</code>&#x2F; <code>yarn</code> &#x2F;<code>pnpm</code>下载项目所需的依赖</p>
+<p><code>npm run dev</code> &#x2F; <code>yarn dev</code> &#x2F;<code>pnpm dev</code>运行项目</p>
+<p>到这一个 <code>vite</code> + <code>vue</code> 的项目最基本的框架就已经搭建完成了</p>
+<h2 id="Sass-预处理的安装"><a href="#Sass-预处理的安装" class="headerlink" title="Sass 预处理的安装"></a>Sass 预处理的安装</h2><p>为什么使用 sass 可以查看 <a class="link"   href="https://juejin.cn/post/7062157782950084622" >Sass 和 Less 的区别和使用 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">pnpm install --save-dev sass</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="按需导入插件的配置"><a href="#按需导入插件的配置" class="headerlink" title="按需导入插件的配置"></a>按需导入插件的配置</h2><p>按需导入 vue 和 vue-router 相关函数 + Element Plus</p>
+<p>需要用到两个插件<code>unplugin-vue-components、``unplugin-auto-import</code>这两个插件。</p>
+<p>首先安装这两个插件</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.安装按需导入插件</span><br><span class="line">pnpm i unplugin-vue-components unplugin-auto-import -D</span><br><span class="line">2.安装ElementPlus</span><br><span class="line">pnpm install element-plus --save</span><br></pre></td></tr></table></figure></div>
+
+<p>然后配置 <code>vite.config.js</code>，我的配置如下</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; fileURLToPath, <span class="variable constant_">URL</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;node:url&#x27;</span></span><br><span class="line"><span class="keyword">import</span> &#123; defineConfig &#125; <span class="keyword">from</span> <span class="string">&#x27;vite&#x27;</span></span><br><span class="line"><span class="keyword">import</span> vue <span class="keyword">from</span> <span class="string">&#x27;@vitejs/plugin-vue&#x27;</span></span><br><span class="line"><span class="comment">//按需引入插件</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">AutoImport</span> <span class="keyword">from</span> <span class="string">&#x27;unplugin-auto-import/vite&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Components</span> <span class="keyword">from</span> <span class="string">&#x27;unplugin-vue-components/vite&#x27;</span></span><br><span class="line"><span class="comment">//按需引入ElementPlus</span></span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">ElementPlusResolver</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;unplugin-vue-components/resolvers&#x27;</span></span><br><span class="line"><span class="comment">// https://vitejs.dev/config/</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">defineConfig</span>(&#123;</span><br><span class="line">  <span class="attr">plugins</span>: [</span><br><span class="line">    <span class="title function_">vue</span>(),</span><br><span class="line">    <span class="title class_">AutoImport</span>(&#123;</span><br><span class="line">      <span class="comment">//自动导入 vue 和 vue-router 相关函数</span></span><br><span class="line">      <span class="attr">imports</span>: [<span class="string">&#x27;vue&#x27;</span>, <span class="string">&#x27;vue-router&#x27;</span>],</span><br><span class="line">      <span class="comment">//自动导入 ElementPlus</span></span><br><span class="line">      <span class="attr">resolvers</span>: [<span class="title class_">ElementPlusResolver</span>()],</span><br><span class="line">    &#125;),</span><br><span class="line">    <span class="title class_">Components</span>(&#123;</span><br><span class="line">      <span class="attr">resolvers</span>: [<span class="title class_">ElementPlusResolver</span>()],</span><br><span class="line">    &#125;),</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">resolve</span>: &#123;</span><br><span class="line">    <span class="attr">alias</span>: &#123;</span><br><span class="line">      <span class="string">&#x27;@&#x27;</span>: <span class="title function_">fileURLToPath</span>(<span class="keyword">new</span> <span class="title function_">URL</span>(<span class="string">&#x27;./src&#x27;</span>, <span class="keyword">import</span>.<span class="property">meta</span>.<span class="property">url</span>)),</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="Axios-的安装及二次封装"><a href="#Axios-的安装及二次封装" class="headerlink" title="Axios 的安装及二次封装"></a>Axios 的安装及二次封装</h2><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span>安装<span class="string">`Axios`</span></span><br><span class="line">pnpm install axios</span><br><span class="line"><span class="number">2.</span>在 scr 目录下新建 <span class="string">`utils/request.js`</span></span><br><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">&#x27;axios&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//1. 创建axios对象</span></span><br><span class="line"><span class="keyword">const</span> service = axios.<span class="title function_">create</span>(&#123;</span><br><span class="line">  <span class="attr">baseURL</span>: <span class="string">&#x27;https://some-domain.com/api/&#x27;</span>,</span><br><span class="line">  <span class="attr">timeout</span>: <span class="number">3000</span>,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//2. 请求拦截器</span></span><br><span class="line">service.<span class="property">interceptors</span>.<span class="property">request</span>.<span class="title function_">use</span>(</span><br><span class="line">  <span class="function">(<span class="params">config</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> config</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="function">(<span class="params">error</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="title class_">Promise</span>.<span class="title function_">reject</span>(error)</span><br><span class="line">  &#125;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">//3. 响应拦截器</span></span><br><span class="line">service.<span class="property">interceptors</span>.<span class="property">response</span>.<span class="title function_">use</span>(</span><br><span class="line">  <span class="function">(<span class="params">response</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">//判断code码</span></span><br><span class="line">    <span class="keyword">return</span> response.<span class="property">data</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="function">(<span class="params">error</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title class_">Promise</span>.<span class="title function_">reject</span>(error)</span><br><span class="line">  &#125;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> service</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="重置默认样式"><a href="#重置默认样式" class="headerlink" title="重置默认样式"></a>重置默认样式</h1><ul>
+<li>雅虎 <a class="link"   href="https://clarle.github.io/yui3/yui/docs/cssreset/" >YUI Reset CSS <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://meyerweb.com/eric/tools/css/reset/" >CSS Tools：Reset CSS <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://github.com/necolas/normalize.css/blob/master/normalize.css" >Normalize CSS <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ul>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Normalize CSS： 点击查看更多 </summary>
+              <div class='content'>
+              <div class="highlight-container" data-rel="Css"><figure class="iseeu highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* Document</span></span><br><span class="line"><span class="comment">  ========================================================================== */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 1. Correct the line height in all browsers.</span></span><br><span class="line"><span class="comment">* 2. Prevent adjustments of font size after orientation changes in iOS.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">1.15</span>; <span class="comment">/* 1 */</span></span><br><span class="line">  -webkit-text-size-adjust: <span class="number">100%</span>; <span class="comment">/* 2 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Sections</span></span><br><span class="line"><span class="comment">  ========================================================================== */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Remove the margin in all browsers.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Render the `main` element consistently in IE.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">main</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Correct the font size and margin on `h1` elements within `section` and</span></span><br><span class="line"><span class="comment">* `article` contexts in Chrome, Firefox, and Safari.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">2em</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0.67em</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Grouping content</span></span><br><span class="line"><span class="comment">  ========================================================================== */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 1. Add the correct box sizing in Firefox.</span></span><br><span class="line"><span class="comment">* 2. Show the overflow in Edge and IE.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line">hr &#123;</span><br><span class="line">  <span class="attribute">box-sizing</span>: content-box; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0</span>; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">overflow</span>: visible; <span class="comment">/* 2 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 1. Correct the inheritance and scaling of font size in all browsers.</span></span><br><span class="line"><span class="comment">* 2. Correct the odd `em` font sizing in all browsers.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line">pre &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: monospace, monospace; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">1em</span>; <span class="comment">/* 2 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Text-level semantics</span></span><br><span class="line"><span class="comment">  ========================================================================== */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Remove the gray background on active links in IE 10.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: transparent;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 1. Remove the bottom border in Chrome 57-</span></span><br><span class="line"><span class="comment">* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">abbr</span><span class="selector-attr">[title]</span> &#123;</span><br><span class="line">  <span class="attribute">border-bottom</span>: none; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">text-decoration</span>: underline; <span class="comment">/* 2 */</span></span><br><span class="line">  <span class="attribute">text-decoration</span>: underline dotted; <span class="comment">/* 2 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Add the correct font weight in Chrome, Edge, and Safari.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">b</span>,</span><br><span class="line"><span class="selector-tag">strong</span> &#123;</span><br><span class="line">  <span class="attribute">font-weight</span>: bolder;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 1. Correct the inheritance and scaling of font size in all browsers.</span></span><br><span class="line"><span class="comment">* 2. Correct the odd `em` font sizing in all browsers.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">code</span>,</span><br><span class="line"><span class="selector-tag">kbd</span>,</span><br><span class="line"><span class="selector-tag">samp</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: monospace, monospace; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">1em</span>; <span class="comment">/* 2 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Add the correct font size in all browsers.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line">small &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">80%</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Prevent `sub` and `sup` elements from affecting the line height in</span></span><br><span class="line"><span class="comment">* all browsers.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line">sub,</span><br><span class="line"><span class="selector-tag">sup</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">75%</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">vertical-align</span>: baseline;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sub &#123;</span><br><span class="line">  <span class="attribute">bottom</span>: -<span class="number">0.25em</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">sup</span> &#123;</span><br><span class="line">  <span class="attribute">top</span>: -<span class="number">0.5em</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Embedded content</span></span><br><span class="line"><span class="comment">  ========================================================================== */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Remove the border on images inside links in IE 10.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">img</span> &#123;</span><br><span class="line">  <span class="attribute">border-style</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Forms</span></span><br><span class="line"><span class="comment">  ========================================================================== */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 1. Change the font styles in all browsers.</span></span><br><span class="line"><span class="comment">* 2. Remove the margin in Firefox and Safari.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span>,</span><br><span class="line"><span class="selector-tag">input</span>,</span><br><span class="line">optgroup,</span><br><span class="line">select,</span><br><span class="line"><span class="selector-tag">textarea</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: inherit; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">100%</span>; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">1.15</span>; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>; <span class="comment">/* 2 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Show the overflow in IE.</span></span><br><span class="line"><span class="comment">* 1. Show the overflow in Edge.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span>,</span><br><span class="line"><span class="selector-tag">input</span> &#123;</span><br><span class="line">  <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">overflow</span>: visible;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Remove the inheritance of text transform in Edge, Firefox, and IE.</span></span><br><span class="line"><span class="comment">* 1. Remove the inheritance of text transform in Firefox.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span>,</span><br><span class="line">select &#123;</span><br><span class="line">  <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">text-transform</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Correct the inability to style clickable types in iOS and Safari.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span>,</span><br><span class="line"><span class="selector-attr">[type=<span class="string">&#x27;button&#x27;</span>]</span>,</span><br><span class="line"><span class="selector-attr">[type=<span class="string">&#x27;reset&#x27;</span>]</span>,</span><br><span class="line"><span class="selector-attr">[type=<span class="string">&#x27;submit&#x27;</span>]</span> &#123;</span><br><span class="line">  -webkit-appearance: button;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Remove the inner border and padding in Firefox.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span>::-moz-focus-inner,</span><br><span class="line">[type=<span class="string">&#x27;button&#x27;</span>]::-moz-focus-inner,</span><br><span class="line">[type=<span class="string">&#x27;reset&#x27;</span>]::-moz-focus-inner,</span><br><span class="line">[type=<span class="string">&#x27;submit&#x27;</span>]::-moz-focus-inner &#123;</span><br><span class="line">  <span class="attribute">border-style</span>: none;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Restore the focus styles unset by the previous rule.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span>:-moz-focusring,</span><br><span class="line">[type=<span class="string">&#x27;button&#x27;</span>]:-moz-focusring,</span><br><span class="line">[type=<span class="string">&#x27;reset&#x27;</span>]:-moz-focusring,</span><br><span class="line">[type=<span class="string">&#x27;submit&#x27;</span>]:-moz-focusring &#123;</span><br><span class="line">  <span class="attribute">outline</span>: <span class="number">1px</span> dotted ButtonText;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Correct the padding in Firefox.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">fieldset</span> &#123;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0.35em</span> <span class="number">0.75em</span> <span class="number">0.625em</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 1. Correct the text wrapping in Edge and IE.</span></span><br><span class="line"><span class="comment">* 2. Correct the color inheritance from `fieldset` elements in IE.</span></span><br><span class="line"><span class="comment">* 3. Remove the padding so developers are not caught out when they zero out</span></span><br><span class="line"><span class="comment">*    `fieldset` elements in all browsers.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">legend</span> &#123;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">color</span>: inherit; <span class="comment">/* 2 */</span></span><br><span class="line">  <span class="attribute">display</span>: table; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">100%</span>; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span>; <span class="comment">/* 3 */</span></span><br><span class="line">  <span class="attribute">white-space</span>: normal; <span class="comment">/* 1 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Add the correct vertical alignment in Chrome, Firefox, and Opera.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line">progress &#123;</span><br><span class="line">  <span class="attribute">vertical-align</span>: baseline;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Remove the default vertical scrollbar in IE 10+.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">textarea</span> &#123;</span><br><span class="line">  <span class="attribute">overflow</span>: auto;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 1. Add the correct box sizing in IE 10.</span></span><br><span class="line"><span class="comment">* 2. Remove the padding in IE 10.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-attr">[type=<span class="string">&#x27;checkbox&#x27;</span>]</span>,</span><br><span class="line"><span class="selector-attr">[type=<span class="string">&#x27;radio&#x27;</span>]</span> &#123;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span>; <span class="comment">/* 2 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Correct the cursor style of increment and decrement buttons in Chrome.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-attr">[type=<span class="string">&#x27;number&#x27;</span>]</span>::-webkit-inner-spin-button,</span><br><span class="line">[type=<span class="string">&#x27;number&#x27;</span>]::-webkit-outer-spin-button &#123;</span><br><span class="line">  <span class="attribute">height</span>: auto;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 1. Correct the odd appearance in Chrome and Safari.</span></span><br><span class="line"><span class="comment">* 2. Correct the outline style in Safari.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-attr">[type=<span class="string">&#x27;search&#x27;</span>]</span> &#123;</span><br><span class="line">  -webkit-appearance: textfield; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">outline-offset</span>: -<span class="number">2px</span>; <span class="comment">/* 2 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Remove the inner padding in Chrome and Safari on macOS.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-attr">[type=<span class="string">&#x27;search&#x27;</span>]</span>::-webkit-search-decoration &#123;</span><br><span class="line">  -webkit-appearance: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 1. Correct the inability to style clickable types in iOS and Safari.</span></span><br><span class="line"><span class="comment">* 2. Change font properties to `inherit` in Safari.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line">::-webkit-file-upload-button &#123;</span><br><span class="line">  -webkit-appearance: button; <span class="comment">/* 1 */</span></span><br><span class="line">  <span class="attribute">font</span>: inherit; <span class="comment">/* 2 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Interactive</span></span><br><span class="line"><span class="comment">  ========================================================================== */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* Add the correct display in Edge, IE 10+, and Firefox.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">details</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* Add the correct display in all browsers.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">summary</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: list-item;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Misc</span></span><br><span class="line"><span class="comment">  ========================================================================== */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Add the correct display in IE 10+.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line">template &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Add the correct display in IE 10.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-attr">[hidden]</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+              </div>
+            </details>
+
+<h1 id="常用工具库整合"><a href="#常用工具库整合" class="headerlink" title="常用工具库整合"></a>常用工具库整合</h1><ol>
+<li><p><code>@vueuse/core</code> 是一个包,封装了常见的一些交互逻辑</p>
+<p>官方地址：<a class="link"   href="https://vueuse.org/guide/" >https://vueuse.org/guide/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>中文文档：<a class="link"   href="http://www.vueusejs.com/" >http://www.vueusejs.com/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i @vueuse/core</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><code>CryptoJS</code>是一个 JavaScript 的加解密的工具包。它支持多种的算法：<code>MD5</code>、<code>SHA1</code>、<code>SHA2</code>、<code>SHA3</code>、<code>RIPEMD-160</code> 哈希散列，进行 <code>AES</code>、<code>DES</code>、<code>Rabbit</code>、<code>RC4</code>、<code>Triple DES</code> 加解密。</p>
+</li>
+</ol>
+<p>Github 地址：<a class="link"   href="https://github.com/brix/crypto-js" >https://github.com/brix/crypto-js <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install crypto-js</span><br></pre></td></tr></table></figure></div>
+
+<ol start="3">
+<li><p>Pinna 的数据持久化</p>
+<p>官方地址：<a class="link"   href="https://prazdevs.github.io/pinia-plugin-persistedstate/" >https://prazdevs.github.io/pinia-plugin-persistedstate/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>别人的教程: <a class="link"   href="https://juejin.cn/post/7094552264739651615" >https://juejin.cn/post/7094552264739651615 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i pinia-plugin-persist</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>国际化插件：vue-i18n<br>vue3 中使用该插件，需要安装 9 版本的</p>
+</li>
+</ol>
+<p>地址：<a class="link"   href="https://vue-i18n.intlify.dev/" >https://vue-i18n.intlify.dev/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">yarn add vue-i18n@9</span><br></pre></td></tr></table></figure></div>
+
+<ol start="5">
+<li>虚拟滚动条插件：<code>nprogress.js</code></li>
+</ol>
+<p>github 地址：<a class="link"   href="https://github.com/rstacruz/nprogress" >https://github.com/rstacruz/nprogress <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<ol start="6">
+<li>滑动验证码插件</li>
+</ol>
+<p>github 地址：<a class="link"   href="https://github.com/lirongtong/miitvip-captcha" >https://github.com/lirongtong/miitvip-captcha <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<ol start="7">
+<li>动画插件：<code>@vueuse/motion </code></li>
+</ol>
+<p>官方地址：<a class="link"   href="https://motion.vueuse.org/" >https://motion.vueuse.org/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>前端教程</category>
+      </categories>
+      <tags>
+        <tag>前端教程</tag>
+        <tag>Vue3</tag>
+        <tag>Vite</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TypeScript学习笔记</title>
+    <url>//post/typescript.html</url>
+    <content><![CDATA[<blockquote>
+<p>本笔记是来自翻阅<a class="link"   href="https://ts.xcatliu.com/" >xcatliu <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>的<code>TypeScript</code>入门教程文档</p>
+<p>此笔记文件于某一时间截取复制至此,只截取了上方 A_TypeScript 学习笔记部分笔记的部分知识点至此,方便网站阅读</p>
+</blockquote>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><h2 id="什么是-TypeScript"><a href="#什么是-TypeScript" class="headerlink" title="什么是 TypeScript"></a>什么是 TypeScript</h2><blockquote>
+<p>Typed JavaScript at Any Scale.<br>添加了类型系统的 JavaScript，适用于任何规模的项目。</p>
+</blockquote>
+<p>以上描述是<a class="link"   href="https://www.typescriptlang.org/" >官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>对于 TypeScript 的定义。</p>
+<p>它强调了 TypeScript 的两个最重要的特性——类型系统、适用于任何规模。</p>
+<h2 id="安装-TypeScript"><a href="#安装-TypeScript" class="headerlink" title="安装 TypeScript"></a>安装 TypeScript</h2><p>TypeScript 的命令行工具安装方法如下：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g typescript</span><br></pre></td></tr></table></figure></div>
+
+<p>以上命令会在全局环境下安装 <code>tsc</code> 命令，安装完成之后，我们就可以在任何地方执行 tsc 命令了。</p>
+<p>编译一个 TypeScript 文件很简单：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">tsc hello.ts</span><br></pre></td></tr></table></figure></div>
+
+<p>我们约定使用 TypeScript 编写的文件以 <code>.ts</code> 为后缀，用 TypeScript 编写 React 时，以 <code>.tsx </code>为后缀。</p>
+<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><h2 id="原始数据类型"><a href="#原始数据类型" class="headerlink" title="原始数据类型"></a>原始数据类型</h2><p>JavaScript 的类型分为两种：原始数据类型（<a class="link"   href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive" >Primitive data types <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>）和对象类型（Object types）。</p>
+<p>原始数据类型包括：布尔值、数值、字符串、<code>null</code>、<code>undefined</code> 以及 ES6 中的新类型 Symbol 和 ES10 中的新类型 BigInt。</p>
+<p>本节主要介绍<strong>前五种</strong>原始数据类型在 TypeScript 中的应用。</p>
+<h3 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h3><p>布尔值是最基础的数据类型，在 TypeScript 中，使用 <code>boolean</code> 定义布尔值类型：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">isDone</span>: <span class="built_in">boolean</span> = <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 编译通过</span></span><br><span class="line"><span class="comment">// 后面约定，未强调编译错误的代码片段，默认为编译通过</span></span><br></pre></td></tr></table></figure></div>
+
+<p>注意，使用构造函数 <code>Boolean</code> 创造的对象不是布尔值：</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">createdByNewBoolean</span>: boolean = <span class="keyword">new</span> <span class="title class_">Boolean</span>(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Type &#x27;Boolean&#x27; is not assignable to type &#x27;boolean&#x27;.</span></span><br><span class="line"><span class="comment">//   &#x27;boolean&#x27; is a primitive, but &#x27;Boolean&#x27; is a wrapper object. Prefer using &#x27;boolean&#x27; when possible.</span></span><br></pre></td></tr></table></figure></div>
+
+<p>事实上 <code>new Boolean()</code> 返回的是一个 <code>Boolean</code> 对象：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">createdByNewBoolean</span>: <span class="title class_">Boolean</span> = <span class="keyword">new</span> <span class="title class_">Boolean</span>(<span class="number">1</span>)</span><br></pre></td></tr></table></figure></div>
+
+<p>直接调用 <code>Boolean</code> 也可以返回一个 <code>boolean</code> 类型：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">createdByBoolean</span>: <span class="built_in">boolean</span> = <span class="title class_">Boolean</span>(<span class="number">1</span>)</span><br></pre></td></tr></table></figure></div>
+
+<p>在 TypeScript 中，<code>boolean</code> 是 JavaScript 中的基本类型，而 <code>Boolean</code> 是 JavaScript 中的构造函数。其他基本类型（除了 <code>null</code> 和 <code>undefined</code>）一样，不再赘述。</p>
+<h3 id="数值"><a href="#数值" class="headerlink" title="数值"></a>数值</h3><p>使用 <code>number</code> 定义数值类型：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">decLiteral</span>: <span class="built_in">number</span> = <span class="number">6</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">hexLiteral</span>: <span class="built_in">number</span> = <span class="number">0xf00d</span></span><br><span class="line"><span class="comment">// ES6 中的二进制表示法</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">binaryLiteral</span>: <span class="built_in">number</span> = <span class="number">0b1010</span></span><br><span class="line"><span class="comment">// ES6 中的八进制表示法</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">octalLiteral</span>: <span class="built_in">number</span> = <span class="number">0o744</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">notANumber</span>: <span class="built_in">number</span> = <span class="title class_">NaN</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">infinityNumber</span>: <span class="built_in">number</span> = <span class="title class_">Infinity</span></span><br></pre></td></tr></table></figure></div>
+
+<p>编译结果：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> decLiteral = <span class="number">6</span></span><br><span class="line"><span class="keyword">var</span> hexLiteral = <span class="number">0xf00d</span></span><br><span class="line"><span class="comment">// ES6 中的二进制表示法</span></span><br><span class="line"><span class="keyword">var</span> binaryLiteral = <span class="number">10</span></span><br><span class="line"><span class="comment">// ES6 中的八进制表示法</span></span><br><span class="line"><span class="keyword">var</span> octalLiteral = <span class="number">484</span></span><br><span class="line"><span class="keyword">var</span> notANumber = <span class="title class_">NaN</span></span><br><span class="line"><span class="keyword">var</span> infinityNumber = <span class="title class_">Infinity</span></span><br></pre></td></tr></table></figure></div>
+
+<p>其中 <code>0b1010</code> 和 <code>0o744</code> 是 <a class="link"   href="http://es6.ruanyifeng.com/#docs/number#%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%92%8C%E5%85%AB%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%E6%B3%95" >ES6 中的二进制和八进制表示法 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，它们会被编译为十进制数字。</p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>使用 <code>string</code> 定义字符串类型：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">myName</span>: <span class="built_in">string</span> = <span class="string">&#x27;Tom&#x27;</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">myAge</span>: <span class="built_in">number</span> = <span class="number">25</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 模板字符串</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">sentence</span>: <span class="built_in">string</span> = <span class="string">`Hello, my name is <span class="subst">$&#123;myName&#125;</span>.</span></span><br><span class="line"><span class="string">I&#x27;ll be <span class="subst">$&#123;myAge + <span class="number">1</span>&#125;</span> years old next month.`</span></span><br></pre></td></tr></table></figure></div>
+
+<p>编译结果：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myName = <span class="string">&#x27;Tom&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> myAge = <span class="number">25</span>;</span><br><span class="line"><span class="comment">// 模板字符串</span></span><br><span class="line"><span class="keyword">var</span> sentence = <span class="string">&quot;Hello, my name is &quot;</span> + myName + <span class="string">&quot;.</span></span><br><span class="line"><span class="string">I&#x27;ll be &quot;</span> + (myAge + <span class="number">1</span>) + <span class="string">&quot; years old next month.&quot;</span>;</span><br></pre></td></tr></table></figure></div>
+
+<p>其中 <kbd>`</kbd> 用来定义 <a class="link"   href="http://es6.ruanyifeng.com/#docs/string#%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2" >ES6 中的模板字符串 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p><code>$&#123;expr&#125;</code> 用来在模板字符串中嵌入表达式。</p>
+<h3 id="空值"><a href="#空值" class="headerlink" title="空值"></a>空值</h3><p>JavaScript 没有空值（Void）的概念，在 TypeScript 中，可以用 <code>void</code> 表示没有任何返回值的函数：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">alertName</span>(<span class="params"></span>): <span class="built_in">void</span> &#123;</span><br><span class="line">  <span class="title function_">alert</span>(<span class="string">&#x27;My name is Tom&#x27;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>声明一个 <code>void</code> 类型的变量没有什么用，因为你只能将它赋值为 <code>undefined</code> 和 <code>null</code>（只在 –strictNullChecks 未指定时）：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">unusable</span>: <span class="built_in">void</span> = <span class="literal">undefined</span></span><br></pre></td></tr></table></figure></div>
+
+<p>Null 和 Undefined§<br>在 TypeScript 中，可以使用 <code>null</code> 和 <code>undefined </code>来定义这两个原始数据类型：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">u</span>: <span class="literal">undefined</span> = <span class="literal">undefined</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">n</span>: <span class="literal">null</span> = <span class="literal">null</span></span><br></pre></td></tr></table></figure></div>
+
+<p>与 <code>void</code> 的区别是，<code>undefined</code> 和 <code>null</code> 是所有类型的子类型。也就是说 <code>undefined</code> 类型的变量，可以赋值给 <code>number</code> 类型的变量：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 这样不会报错</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">num</span>: <span class="built_in">number</span> = <span class="literal">undefined</span></span><br><span class="line"><span class="comment">// 这样也不会报错</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">u</span>: <span class="literal">undefined</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">num</span>: <span class="built_in">number</span> = u</span><br></pre></td></tr></table></figure></div>
+
+<p>而 <code>void</code> 类型的变量不能赋值给 <code>number</code> 类型的变量：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">u</span>: <span class="built_in">void</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">num</span>: <span class="built_in">number</span> = u</span><br><span class="line"></span><br><span class="line"><span class="comment">// Type &#x27;void&#x27; is not assignable to type &#x27;number&#x27;.</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="任意值"><a href="#任意值" class="headerlink" title="任意值"></a>任意值</h2><p>任意值（Any）用来表示允许赋值为任意类型。</p>
+<h3 id="什么是任意值类型"><a href="#什么是任意值类型" class="headerlink" title="什么是任意值类型"></a>什么是任意值类型</h3><p>如果是一个普通类型，在赋值过程中改变类型是不被允许的：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">myFavoriteNumber</span>: <span class="built_in">string</span> = <span class="string">&#x27;seven&#x27;</span></span><br><span class="line">myFavoriteNumber = <span class="number">7</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// index.ts(2,1): error TS2322: Type &#x27;number&#x27; is not assignable to type &#x27;string&#x27;.</span></span><br></pre></td></tr></table></figure></div>
+
+<p>但如果是 any 类型，则允许被赋值为任意类型。</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">myFavoriteNumber</span>: <span class="built_in">any</span> = <span class="string">&#x27;seven&#x27;</span></span><br><span class="line">myFavoriteNumber = <span class="number">7</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="任意值的属性和方法"><a href="#任意值的属性和方法" class="headerlink" title="任意值的属性和方法"></a>任意值的属性和方法</h3><p>在任意值上访问任何属性都是允许的：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">anyThing</span>: <span class="built_in">any</span> = <span class="string">&#x27;hello&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(anyThing.<span class="property">myName</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(anyThing.<span class="property">myName</span>.<span class="property">firstName</span>)</span><br></pre></td></tr></table></figure></div>
+
+<p>也允许调用任何方法：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">anyThing</span>: <span class="built_in">any</span> = <span class="string">&#x27;Tom&#x27;</span></span><br><span class="line">anyThing.<span class="title function_">setName</span>(<span class="string">&#x27;Jerry&#x27;</span>)</span><br><span class="line">anyThing.<span class="title function_">setName</span>(<span class="string">&#x27;Jerry&#x27;</span>).<span class="title function_">sayHello</span>()</span><br><span class="line">anyThing.<span class="property">myName</span>.<span class="title function_">setFirstName</span>(<span class="string">&#x27;Cat&#x27;</span>)</span><br></pre></td></tr></table></figure></div>
+
+<p>可以认为，声明一个变量为任意值之后，对它的任何操作，返回的内容的类型都是任意值。</p>
+<h3 id="未声明类型的变量"><a href="#未声明类型的变量" class="headerlink" title="未声明类型的变量"></a>未声明类型的变量</h3><p>变量如果在声明的时候，未指定其类型，那么它会被识别为任意值类型：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> something</span><br><span class="line">something = <span class="string">&#x27;seven&#x27;</span></span><br><span class="line">something = <span class="number">7</span></span><br><span class="line"></span><br><span class="line">something.<span class="title function_">setName</span>(<span class="string">&#x27;Tom&#x27;</span>)</span><br></pre></td></tr></table></figure></div>
+
+<p>等价于</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">something</span>: <span class="built_in">any</span></span><br><span class="line">something = <span class="string">&#x27;seven&#x27;</span></span><br><span class="line">something = <span class="number">7</span></span><br><span class="line"></span><br><span class="line">something.<span class="title function_">setName</span>(<span class="string">&#x27;Tom&#x27;</span>)</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="类型推论"><a href="#类型推论" class="headerlink" title="类型推论"></a>类型推论</h2><p>如果没有明确的指定类型，那么 TypeScript 会依照类型推论（Type Inference）的规则推断出一个类型。</p>
+<h3 id="什么是类型推论"><a href="#什么是类型推论" class="headerlink" title="什么是类型推论"></a>什么是类型推论</h3><p>以下代码虽然没有指定类型，但是会在编译的时候报错：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> myFavoriteNumber = <span class="string">&#x27;seven&#x27;</span></span><br><span class="line">myFavoriteNumber = <span class="number">7</span></span><br><span class="line"><span class="comment">// index.ts(2,1): error TS2322: Type &#x27;number&#x27; is not assignable to type &#x27;string&#x27;.</span></span><br></pre></td></tr></table></figure></div>
+
+<p>事实上，它等价于：</p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">myFavoriteNumber</span>: <span class="built_in">string</span> = <span class="string">&#x27;seven&#x27;</span></span><br><span class="line">myFavoriteNumber = <span class="number">7</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// index.ts(2,1): error TS2322: Type &#x27;number&#x27; is not assignable to type &#x27;string&#x27;.</span></span><br></pre></td></tr></table></figure></div>
+
+<p>TypeScript 会在没有明确的指定类型的时候推测出一个类型，这就是类型推论。</p>
+<p><strong>如果定义的时候没有赋值，不管之后有没有赋值，都会被推断成 <code>any</code> 类型而完全不被类型检查：</strong></p>
+<div class="highlight-container" data-rel="Ts"><figure class="iseeu highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> myFavoriteNumber</span><br><span class="line">myFavoriteNumber = <span class="string">&#x27;seven&#x27;</span></span><br><span class="line">myFavoriteNumber = <span class="number">7</span></span><br></pre></td></tr></table></figure></div>
+]]></content>
+      <categories>
+        <category>前端教程</category>
+      </categories>
+      <tags>
+        <tag>前端教程</tag>
+        <tag>TS</tag>
+        <tag>TypeScript</tag>
+      </tags>
+  </entry>
+</search>
