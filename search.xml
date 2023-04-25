@@ -1,37 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Git全套使用教程</title>
-    <url>//post/git.html</url>
-    <content><![CDATA[<h1 id="Git-常用命令速查表"><a href="#Git-常用命令速查表" class="headerlink" title="Git 常用命令速查表"></a>Git 常用命令速查表</h1><div class="note note-warning icon-padding"><i class="note-icon fa-solid fa-exclamation-circle"></i><p>注意，现在的默认分支为<code>main</code></p>
-</div>
-
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.staticaly.com/gh/xiaomait/picgo@master/image/git.webp"
-                     
-                ></p>
-<h1 id="设置-SSH-key"><a href="#设置-SSH-key" class="headerlink" title="设置 SSH key"></a>设置 SSH key</h1><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">git config --global user.email <span class="string">&quot;1143918105@qq.com&quot;</span></span><br><span class="line"></span><br><span class="line">git config --global user.name <span class="string">&quot;xiaomait&quot;</span></span><br><span class="line">生成密钥</span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;1143918105@qq.com&quot;</span></span><br><span class="line">查看密钥</span><br><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br><span class="line">测试连接</span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></div>
-
-<h1 id="上传本地文件到-github"><a href="#上传本地文件到-github" class="headerlink" title="上传本地文件到 github"></a>上传本地文件到 github</h1><ol>
-<li><code>git init</code> ：在此文件夹生成一个<code>.git</code>隐藏文件</li>
-<li><code>git add .</code> : 将文件添加到缓存区( 注意这个”.”，是有空格的，”.”代表这个文件夹下的目录全部都提交，也可以通过<code>git add 文件名</code> 提交指定的文件)</li>
-<li><code>git status</code>：查看现在的状态，也可以不看，随你啦，可以看到当前文件夹里面的内容都提交上去了</li>
-<li><code>git commit -m &quot;这里是注释&quot;</code>：提交添加到缓存区的文件</li>
-<li><code>git remote add origin https://xxx@xxx/test.git</code> ： 添加新的 git 方式的 origin, github 上创建好的仓库和本地仓库进行关联</li>
-<li><code>git push origin main</code> 将本地库的所有内容推送到远程仓库（github）上，即上传本地文件</li>
-</ol>
-]]></content>
-      <categories>
-        <category>学习教程</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>学习教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>//post/hello-world.html</url>
     <content><![CDATA[<blockquote>
@@ -106,9 +75,9 @@
         <category>学习教程</category>
       </categories>
       <tags>
-        <tag>学习教程</tag>
         <tag>Hexo</tag>
         <tag>Markdown</tag>
+        <tag>学习教程</tag>
       </tags>
   </entry>
   <entry>
@@ -186,6 +155,37 @@
       </tags>
   </entry>
   <entry>
+    <title>Git全套使用教程</title>
+    <url>//post/git.html</url>
+    <content><![CDATA[<h1 id="Git-常用命令速查表"><a href="#Git-常用命令速查表" class="headerlink" title="Git 常用命令速查表"></a>Git 常用命令速查表</h1><div class="note note-warning icon-padding"><i class="note-icon fa-solid fa-exclamation-circle"></i><p>注意，现在的默认分支为<code>main</code></p>
+</div>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.marzm.cn/image/git.webp"
+                     
+                ></p>
+<h1 id="设置-SSH-key"><a href="#设置-SSH-key" class="headerlink" title="设置 SSH key"></a>设置 SSH key</h1><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">git config --global user.email <span class="string">&quot;1143918105@qq.com&quot;</span></span><br><span class="line"></span><br><span class="line">git config --global user.name <span class="string">&quot;xiaomait&quot;</span></span><br><span class="line">生成密钥</span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;1143918105@qq.com&quot;</span></span><br><span class="line">查看密钥</span><br><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br><span class="line">测试连接</span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="上传本地文件到-github"><a href="#上传本地文件到-github" class="headerlink" title="上传本地文件到 github"></a>上传本地文件到 github</h1><ol>
+<li><code>git init</code> ：在此文件夹生成一个<code>.git</code>隐藏文件</li>
+<li><code>git add .</code> : 将文件添加到缓存区( 注意这个”.”，是有空格的，”.”代表这个文件夹下的目录全部都提交，也可以通过<code>git add 文件名</code> 提交指定的文件)</li>
+<li><code>git status</code>：查看现在的状态，也可以不看，随你啦，可以看到当前文件夹里面的内容都提交上去了</li>
+<li><code>git commit -m &quot;这里是注释&quot;</code>：提交添加到缓存区的文件</li>
+<li><code>git remote add origin https://xxx@xxx/test.git</code> ： 添加新的 git 方式的 origin, github 上创建好的仓库和本地仓库进行关联</li>
+<li><code>git push origin main</code> 将本地库的所有内容推送到远程仓库（github）上，即上传本地文件</li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习教程</category>
+      </categories>
+      <tags>
+        <tag>学习教程</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mac使用技巧</title>
     <url>//post/mac.html</url>
     <content><![CDATA[<blockquote>
@@ -228,7 +228,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://s1.vika.cn/space/2023/02/04/a98db4b54bab4bba88bf2008aa6012b9"
+                     data-src="https://cdn.marzm.cn/image/xxtls.webp"
                      
                 ></p>
 <p>随着开学季到来，大批大学生又要进入到各种大小网课当中，每日的刷课，刷作业搞的头都大了，那么今天给大家带来自动刷课答题脚本安装教程。</p>
@@ -252,7 +252,7 @@
 <p>安装好后，扩展程序中就拥有<code>ScriptCat</code>了<br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://s1.vika.cn/space/2023/02/04/45165156b9214f4a814138a7f9bee34e"
+                     data-src="https://cdn.staticaly.com/gh/xiaomait/picgo@master/image/scriptcat.webp"
                      
                 ></p>
 <h1 id="脚本的安装"><a href="#脚本的安装" class="headerlink" title="脚本的安装"></a>脚本的安装</h1><h2 id="OCS-网课助手"><a href="#OCS-网课助手" class="headerlink" title="OCS 网课助手"></a>OCS 网课助手</h2><p>这里提供 OCS 网课助手，支持各平台网课学习，支持超星学习通，知道智慧树，智慧职教（职教云），等网课的学习，作业，考试功能。</p>
@@ -263,7 +263,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://s1.vika.cn/space/2023/02/04/2760f872ffa8407eb9440796b9f5d157"
+                     data-src="https://cdn.staticaly.com/gh/xiaomait/picgo@master/image/ocs.webp"
                      
                 ></p>
 <p>安装好后不会有任何提示，你可以直接访问<code>超星学习通</code>或者其他网课平台就可以看到它已经激活了.</p>
@@ -279,15 +279,10 @@
 <p>所有网页均支持划词搜题,也可输入文本搜题悬浮窗可拖动可关闭,可个性化设置解除网页禁止复制限制适用于各类问答,网课问题,竞赛问题,专业术语,业务名称,情景问题,在线作业等。</p>
 <a class="button  regular" href='https://scriptcat.org/scripts/code/612/%E9%A2%98%E6%B5%B7%20x%20%E5%88%92%E8%AF%8D%E6%90%9C%E9%A2%98.user.js' title='点击这里安装'><i class='fa-solid fa-hand-back-point-up'></i> 点击这里安装</a>
 
-<h2 id="马小智公众号搜题"><a href="#马小智公众号搜题" class="headerlink" title="马小智公众号搜题"></a>马小智公众号搜题</h2><p>这是由本人经营的公众号，由<code>河北瓜子科技有限公司</code>提供部分技术接口.在这里也提供了题库，可以进行搜题功能，未来还会在公众号加入更多的功能噢！<br><img  
+<h2 id="马小智公众号搜题"><a href="#马小智公众号搜题" class="headerlink" title="马小智公众号搜题"></a>马小智公众号搜题</h2><p>这是由本人经营的公众号，由<code>河北瓜子科技有限公司</code>提供部分技术接口.<br>在这里也提供了搜题功能，同时支持图片语音搜题功能噢！<br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://s1.vika.cn/space/2023/02/04/c34ede2f417148f599da15d96fc6572e"
-                     
-                ><br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://s1.vika.cn/space/2023/02/04/ac422a7349294b778227c72c30c7dd42"
+                     data-src="https://cdn.marzm.cn/image/mxz.webp"
                      
                 ></p>
 ]]></content>
@@ -323,12 +318,7 @@
 </ol>
 </blockquote>
 <h2 id="建立-Github-仓库"><a href="#建立-Github-仓库" class="headerlink" title="建立 Github 仓库"></a>建立 Github 仓库</h2><ol>
-<li>进入<a class="link"   href="https://github.com/" >Github 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>注册并登录自己的账号，到自己的个人主页，点击右上角的<code>+</code>，并选择<code>New Repository</code>创建自己的仓库。<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://s1.vika.cn/space/2022/12/03/304f38e77839471a87abbcad039116a4"
-                     
-                ></li>
+<li>进入<a class="link"   href="https://github.com/" >Github 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>注册并登录自己的账号，到自己的个人主页，点击右上角的<code>+</code>，并选择<code>New Repository</code>创建自己的仓库。</li>
 <li>仓库名字随意，描述也可以自由发挥，可见性最好选<code>public</code>，<code>Readme</code>文件可以创建，然后点击<code>Create Repository</code>创建仓库。</li>
 <li>原文的该处是使用 git 提交图片，步骤较为复杂，如果感兴趣可以前往<a class="link"   href="https://www.fomal.cc/posts/d7fb1ba1.html" >Fomalhaut 免费图床综合教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>进行查看，本文提供更加方便的上传管理。</li>
 <li>这里推荐使用<a class="link"   href="https://picx.xpoet.cn/" > PicX 图床管理 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，仅需要一个拥有 repo 权限的 GitHub Token 即可进行管理，且提供图片压缩和国内 CDN 外链。<br><img  
@@ -486,59 +476,9 @@
 <h2 id="web-uploader-插件"><a href="#web-uploader-插件" class="headerlink" title="web-uploader 插件"></a>web-uploader 插件</h2><p>使用 web-uploader 插件可以实现自定义图床上传<br>需要根据选择图片提供的 API 自定义<br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://s1.vika.cn/space/2023/02/03/9a0c94b7f88848158fbef338b1462245"
+                     data-src="https://cdn.staticaly.com/gh/xiaomait/picgo@master/image/picgo.webp"
                      
                 ></p>
-<h2 id="Vika-插件"><a href="#Vika-插件" class="headerlink" title="Vika 插件"></a>Vika 插件</h2><p>Vika 图床的服务器在国内，速度是比较快的。<br>所以在这里强烈推荐<a class="link"   href="https://vika.cn/?inviteCode=40659323" >Vika <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，虽然它做了 1G📎 的限制，但是可以通过 V 币免费获取额度，新用户填写邀请码后，双方都可以获得 1000V 币。<br>填写博主的邀请码 <code>40659323</code> 大家一起白嫖噢！</p>
-<ol>
-<li><p>首先在 Picgo 里面安装 Vikadata 的插件<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/image-7.webp"
-                     
-                ></p>
-</li>
-<li><p>我们要填的信息有下面这几项：<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/1672391987585.webp"
-                     
-                ></p>
-</li>
-<li><p>进入<a class="link"   href="https://vika.cn/?inviteCode=40659323" >维格表官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，注册自己的账号并登录，新建一个空白的维格表<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/1672392200825.webp"
-                     
-                ></p>
-</li>
-<li><p>随后点击左下角头像的个人设置，绑定自己的邮箱后，获取<code>API Token</code><br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/1672392200835.webp"
-                     
-                ><br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/1672392200842.webp"
-                     
-                ></p>
-</li>
-<li><p>进入刚刚创建的表格后，点击上边的<code>API</code>，进入 API 界面后，依次点击显示<code>API Token</code>-&gt;<code>Get 获取</code>，然后图中框起来的就是我们需要的<code>维格表ID</code>和<code>API Token</code><br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/1672392201560.webp"
-                     
-                ><br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://tuchuang.voooe.cn/images/2022/12/30/1672392249317.webp"
-                     
-                ></p>
-</li>
-<li><p>填进去对应位置后，到上传区域，把图床换成维格表，试试拖拽图片能不能上传！</p>
-</li>
-</ol>
 ]]></content>
       <categories>
         <category>建站教程</category>
@@ -678,7 +618,7 @@
 <p>依次需要配置项目名 、选择自己需要的插件<br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://s1.vika.cn/space/2023/04/06/71965284bc814cc7be5fb7ebeced8cdb"
+                     data-src="https://cdn.marzm.cn/image/vueinit.webp"
                      
                 ></p>
 <p><code>cd vue3</code> 进入创建的项目包</p>
