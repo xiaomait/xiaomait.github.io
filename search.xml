@@ -180,9 +180,9 @@
         <category>前端教程</category>
       </categories>
       <tags>
+        <tag>前端教程</tag>
         <tag>JS</tag>
         <tag>Javascript</tag>
-        <tag>前端教程</tag>
       </tags>
   </entry>
   <entry>
@@ -688,9 +688,9 @@
         <category>前端教程</category>
       </categories>
       <tags>
-        <tag>前端教程</tag>
         <tag>Vue3</tag>
         <tag>Vite</tag>
+        <tag>前端教程</tag>
       </tags>
   </entry>
 </search>
