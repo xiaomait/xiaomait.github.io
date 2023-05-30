@@ -180,9 +180,9 @@
         <category>前端教程</category>
       </categories>
       <tags>
-        <tag>前端教程</tag>
         <tag>JS</tag>
         <tag>Javascript</tag>
+        <tag>前端教程</tag>
       </tags>
   </entry>
   <entry>
@@ -638,6 +638,15 @@
 <p><code>npm i</code>&#x2F; <code>yarn</code> &#x2F;<code>pnpm</code>下载项目所需的依赖</p>
 <p><code>npm run dev</code> &#x2F; <code>yarn dev</code> &#x2F;<code>pnpm dev</code>运行项目</p>
 <p>到这一个 <code>vite</code> + <code>vue</code> 的项目最基本的框架就已经搭建完成了</p>
+<h2 id="代码联想提示路径"><a href="#代码联想提示路径" class="headerlink" title="代码联想提示路径"></a>代码联想提示路径</h2><p>我们在使用 <code>fileURLToPath</code>的时候没有提示，我们需要安装一下node的类型库</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm add @types/node -D</span><br></pre></td></tr></table></figure></div>
+
+<p>在<code>vite.config.js</code>中填写</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; fileURLToPath &#125; <span class="keyword">from</span> <span class="string">&#x27;url&#x27;</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">   <span class="comment">// ...省略其他</span></span><br><span class="line">  <span class="attr">resolve</span>:&#123;</span><br><span class="line">    <span class="attr">alias</span>:&#123;</span><br><span class="line">      <span class="string">&quot;@&quot;</span>: <span class="title function_">fileURLToPath</span>(<span class="keyword">new</span> <span class="title function_">URL</span>(<span class="string">&#x27;src&#x27;</span>, <span class="keyword">import</span>.<span class="property">meta</span>.<span class="property">url</span>))</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>配置完成后，我们在项目中尝试引用，发现并没有路径提示，那么我们还需要在 <code>jsconfig.json</code>中做一下配置</p>
+<div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;compilerOptions&quot;</span> <span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">     <span class="comment">//其他配置</span></span><br><span class="line">    <span class="attr">&quot;baseUrl&quot;</span> <span class="punctuation">:</span> <span class="string">&quot;./&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;paths&quot;</span> <span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;@/*&quot;</span><span class="punctuation">:</span><span class="punctuation">[</span><span class="string">&quot;src/*&quot;</span><span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
+
 <h2 id="Eslint代码规范"><a href="#Eslint代码规范" class="headerlink" title="Eslint代码规范"></a>Eslint代码规范</h2><p>首先安装 <code>Eslint</code></p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm i -D eslint</span><br></pre></td></tr></table></figure></div>
 
@@ -688,7 +697,7 @@
 <li><p><code>@vueuse/core</code> 是一个包,封装了常见的一些交互逻辑</p>
 <p>官方地址：<a class="link"   href="https://vueuse.org/guide/" >https://vueuse.org/guide/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>中文文档：<a class="link"   href="http://www.vueusejs.com/" >http://www.vueusejs.com/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">npm i @vueuse/core</span><br></pre></td></tr></table></figure></div></li>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">npm install @vueuse/core</span><br></pre></td></tr></table></figure></div></li>
 <li><p><code>CryptoJS</code>是一个 JavaScript 的加解密的工具包。它支持多种的算法：<code>MD5</code>、<code>SHA1</code>、<code>SHA2</code>、<code>SHA3</code>、<code>RIPEMD-160</code> 哈希散列，进行 <code>AES</code>、<code>DES</code>、<code>Rabbit</code>、<code>RC4</code>、<code>Triple DES</code> 加解密。</p>
 </li>
 </ol>
@@ -699,12 +708,12 @@
 <li><p>Pinna 的数据持久化</p>
 <p>官方地址：<a class="link"   href="https://prazdevs.github.io/pinia-plugin-persistedstate/" >https://prazdevs.github.io/pinia-plugin-persistedstate/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>别人的教程: <a class="link"   href="https://juejin.cn/post/7094552264739651615" >https://juejin.cn/post/7094552264739651615 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">npm i pinia-plugin-persist</span><br></pre></td></tr></table></figure></div></li>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">npm install pinia-plugin-persistedstate</span><br></pre></td></tr></table></figure></div></li>
 <li><p>国际化插件：vue-i18n<br>vue3 中使用该插件，需要安装 9 版本的</p>
 </li>
 </ol>
 <p>地址：<a class="link"   href="https://vue-i18n.intlify.dev/" >https://vue-i18n.intlify.dev/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add vue-i18n@9</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">npm install vue-i18n@9</span><br></pre></td></tr></table></figure></div>
 
 <ol start="5">
 <li>虚拟滚动条插件：<code>nprogress.js</code></li>
@@ -723,9 +732,9 @@
         <category>前端教程</category>
       </categories>
       <tags>
+        <tag>前端教程</tag>
         <tag>Vue3</tag>
         <tag>Vite</tag>
-        <tag>前端教程</tag>
       </tags>
   </entry>
 </search>
