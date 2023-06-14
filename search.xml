@@ -737,4 +737,49 @@
         <tag>Vite</tag>
       </tags>
   </entry>
+  <entry>
+    <title>白嫖IPv4 NAT VPS——VPSLog</title>
+    <url>//post/%E7%99%BD%E5%AB%96IPv4%20NAT%20VPS%E2%80%94%E2%80%94VPSLog.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在Hax、Woiden即将因为收入入不敷出而面临关站的风险后，只有VC鸡能为我们承担白嫖的压力。</p>
+<p>Hax的服务器一直处于空缺状态，Woiden的服务器获取后只能使用3天且<code>不能续费</code>（你没有看错）</p>
+<p>那么这篇文章就来和大家一起来介绍下VPSLog的NAT VPS。</p>
+<h2 id="准备材料"><a href="#准备材料" class="headerlink" title="准备材料"></a>准备材料</h2><ul>
+<li>一个 Telegram 账号</li>
+</ul>
+<h2 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h2><ol>
+<li>在TG打开 <a class="link"   href="https://t.me/vpslog_distribute_bot" >@vpslog_distribute_bot <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，然后点击提供的链接登录</li>
+</ol>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.marzm.cn/image/vpslog1.4gt0e07ixaw0.webp"
+                      alt="vpslog1"
+                ></p>
+<ol start="2">
+<li><p>点击“发送验证码”按钮，填写在TG机器人发送的验证码，然后点击“登录”按钮</p>
+</li>
+<li><p>可点击“更多”→“确认推介者”，输入我的TG ID：<code>6197993142</code>（也可以填写其他vpslog的注册用户的TG ID），可以获得更多的额度</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.marzm.cn/image/1.1cwgd2z4oigw.webp"
+                      alt="1"
+                ></p>
+</li>
+<li><p>在下面的SERVER 获取处，选择类型，然后点击“申请”按钮</p>
+</li>
+<li><p>这样就创建好VPS了，然后点击“安装&#x2F;重装”按钮，安装操作系统</p>
+</li>
+<li><p>待VPS安装完成后，将会提示IPv4的IP地址以及SSH端口</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>建站教程</category>
+        <category>VPS</category>
+      </categories>
+      <tags>
+        <tag>VPS</tag>
+      </tags>
+  </entry>
 </search>
