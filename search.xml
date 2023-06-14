@@ -772,6 +772,15 @@
 </li>
 <li><p>待VPS安装完成后，将会提示IPv4的IP地址以及SSH端口</p>
 </li>
+<li><p>安装完成后我们用SSH等工具链接，这里推荐Github的一个开源项目<a class="link"   href="https://github.com/nirui/sshwifty" >sshwifty <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>官方Demo地址为：<a class="link"   href="https://sshwifty-demo.nirui.org/" >https://sshwifty-demo.nirui.org/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.marzm.cn/image/ssh.bno4kkealsg.webp"
+                      alt="ssh"
+                ></p>
+</li>
 </ol>
 ]]></content>
       <categories>
